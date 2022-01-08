@@ -1,0 +1,17 @@
+/*Utils*/
+@import "../scss/utils/normalize";
+@import "../scss/utils/mixings";
+@import "../scss/utils/animation";
+
+/*Globals*/
+@import "../scss/global/global";
+@import "../scss/global/header";
+
+/*Html Views*/
+
+@import "../scss/views/telecom.scss";
+@import "../scss/views/ehs_incidentes.scss";
+@import "../scss/views/notificar";
+
+
+

@@ -1,0 +1,24 @@
+
+
+.blocksEhs{
+    margin-top: 3rem;
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    .spanTwo{
+        color: grey;
+        letter-spacing: 1px;
+        font:900;
+    }
+}
+.blockThree,.blockTwo,.blockOne,.blockFour{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid whitesmoke;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    @include cajas-iframe(25rem,15rem,2rem)
+}
+

@@ -1,0 +1,16 @@
+
+@mixin cajas-videos ($ancho, $alto, $opacity){
+    height: $alto;
+    width: $ancho;
+    opacity: $opacity;
+    
+} 
+@mixin cajas-iframe ($ancho, $alto, $margen){
+    height: $alto;
+    width: $ancho;
+    margin: $margen;
+}
+@mixin flex-mov ($posicion, $ubicacion){
+    display: $posicion;
+    flex-direction:$ubicacion;
+}

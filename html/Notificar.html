@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+    <title>Notificar</title>
+ 
+    <link rel="stylesheet" href="../css/index.css">    
+</head>
+<body>
+  <header>
+    <nav class="navbar  navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><span class="logoTeco">Telecom</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Notificar Observacion de la Seguridad</a>
+            </li>
+          </ul>
+        </div>
+  
+      </div>
+    </nav>
+  </header>
+
+    <main class="container">
+        <div class="optionObserSeg">
+            <h2 class="t2">Gpo.Obesrvacion Seguridad</h2>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Tipo Grupo Observacion</option>
+            <option value="1">Control Establecimiento</option>
+            <option value="2">Control Operativo MOP</option>
+            <option value="3">Control Operativo MOC</option>
+          </select>
+        </div>
+
+            
+            <h1 onclick="ShowtOne()">Que ha sucedido?</h1>
+         
+
+        <div class="s1"> 
+          
+        <div class="mb-3 l1">
+            <label for="exampleFormControlInput1" class="form-label">Titulo</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+          </div>
+          <div class="mb-3 l1">
+            <label for="exampleFormControlTextarea1" class="form-label">Circunstancia de Control</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+          </div>
+          <div id="borderSep"></div>
+        </div> 
+        
+              <h1 class="" onclick="Showthree()">Cuando ha Pasado?</h1>
+          
+         
+          
+        <div class="dataTimeOne">
+            <div class="input-group">
+                <span class="input-group-text" id="inputGroup-sizing">Fecha</span>
+                <input type="date" name="dataFecha" class="form-control" aria-label="Sizing example input" >
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-text" id="inputGroup-sizing">Horario</span>
+                <input type="time" name="dataHora" class="form-control" aria-label="Sizing example input">
+            </div>
+            
+            <div class="input-group">
+              <span class="input-group-text" id="inputGroup-sizing">UTC-03</span>
+              <input type="text" name="dataHora" class="form-control" aria-label="Sizing example input">
+          </div>
+          <div id="borderSep"></div>
+         </div>
+
+            <h1  onclick="Showtwo()">Donde ha sucedido?</h1>
+        
+        <div class="s2"> 
+            <div class="mb-3 l1">
+              <label for="exampleFormControlInput1" class="form-label">Ubicacion</label>
+            <div>
+              <span class="spanOne">Detalles</span>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+          </div>
+          </div>
+          <div class="mb-3 l1">
+            <label for="exampleFormControlTextarea1" class="form-label">Descripcion del Lugar</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+          </div>
+          <div class="mb-3 l1">
+            <label for="exampleFormControlInput1" class="form-label">Calle/Numero: </label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+          </div>
+          <div id="borderSep"></div>
+        </div> 
+
+            <h1  onclick="ShowtFour()">Quien Fue el suj.observacion</h1>
+         
+        <div class="observacion">
+        <div class="bttn1">
+          <button type="button" id="b1" class="btn btn-outline-primary btn-sm">Seleccione a mi</button>
+          <button type="button" id ="b2"class="btn btn-outline-primary btn-sm">Libreta Dir</button>
+          <button type="button" name="bttnM" class="btn btn-outline-primary btn-sm">Indicar Manualmente</button>
+          <button type="button" id="b4" class="btn btn-outline-secondary btn-sm">Borrar</button>
+        </div>
+
+      <div class="blocks">
+        <section class="">
+
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Nombre de Pila" aria-label="" aria-describedby="">
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Unidad Organizativa" aria-label="" aria-describedby="">
+
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Direccion" aria-label="" aria-describedby="">
+
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Mail" aria-label="" aria-describedby="">
+
+        </div>
+       </section>
+
+       <section class="">
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Apellidos" aria-label="" aria-describedby="">
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Empresa" aria-label="" aria-describedby="">
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Telefono" aria-label="" aria-describedby="">
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="DNI" aria-label="" aria-describedby="">
+        </div>
+        
+      </section>
+    </div>
+
+        <button type="button" class="btn btn-outline-primary btn-sm">Añadir Otra persona supervisada</button> 
+        
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Descripcion de la Situacion</label>
+          <textarea class="form-control " id="exampleFormControlTextarea1" rows="5"></textarea>
+        </div>
+        <div id="borderSep"></div>
+  </div>
+
+    <h1 onclick="ShowtFive()" class="h1">Cual es riesgo de que estas circunstancias causen una lesion o un accidente en el futuro?</h1>
+
+      <div class="riesgo">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Riesgo Estimado</option>
+          <option value="1">0 - Sin Riesgo</option>
+          <option value="2">1 - Riesgo Bajo</option>
+          <option value="3">2 - Riesgo Medio</option>
+          <option value="4">3 - Riesgo Alto</option>
+        </select>
+        <div id="borderSep"></div>
+      </div>
+
+    </main>
+    <footer>
+
+    </footer>
+    <!-- Inicio Scrip -->
+    <script src="../js/hojaObservaciones.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Fin Script -->
+</body>
+</html>
