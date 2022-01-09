@@ -4,7 +4,18 @@
     display: flex;
     flex-direction: column;
     width: 50%;
-
+    display: none;
+    
+}
+.observacion{
+    display: none;
+    // width: 50%;
+    .bttn1{
+        display: flex;
+        justify-content:left;
+        gap:3rem;
+        
+    }
 }
 .optionObserSeg{
     margin-bottom: 3rem;
@@ -16,7 +27,9 @@
     
 }
 .riesgo{
-    width: 20%;
+    margin-top: 1rem;
+    display: none;
+    width: 30%;
 }
 .h1{
     width: 70%;
@@ -39,14 +52,27 @@
     display: flex;
     flex-direction: row;
     margin-top: 1rem;
-    gap: 10rem;
+    gap: 4rem;
     margin-bottom: 1rem;  
+    .inputsOne,.inputsTwo{
+        border-left: 1px solid blueviolet;
+        border-bottom: 1px solid blueviolet;
+        padding: 1.5rem;
+        @include cajas-iframe(25rem,18rem,0rem)
+    } 
+    .inputsThree,.inputsFour{
+        padding: 1rem;
+        margin:1rem;
+        
+        
+    }  
 }
 .btn{
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
 }
 .s1 {
-    opacity: 1;
+    display: none;
     -webkit-transition: opacity 1000ms linear;
     transition: opacity 1000ms linear;
 
@@ -55,6 +81,7 @@
     }
 }
 .s2{
+    display: none;
     width: 50%;  
                  
 } 
@@ -68,10 +95,39 @@
     
 }
 #borderSep{
-    border-bottom: 3px solid blueviolet;
+    border-bottom: 0.1rem solid blueviolet;
     color: blueviolet;
     width: 100rem;
-    height: 3px;
+    height: 1px;
     margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+.spanOne{
+    font-size: 1em;
+}
+/* Mobile Styles */
+@media only screen and (max-width: 400px) { 
+    #borderSep{
+        width: 30rem;
+    }
+    .dataTimeOne{
+        width: 100%;
+    }
+    .s1{
+     .mb-3{
+        width: 100%;
+    }
+    #s2{
+        width: 100%;
+    }
+ }
+}                     
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    
+}               
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    
+
 }

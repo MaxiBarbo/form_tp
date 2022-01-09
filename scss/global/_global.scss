@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     /* background-image: url("../Multimedia/Png.jfif"); */
-    background-color: #C0D6DF;
+    background-color: whitesmoke;
     background-size: cover;
     background-attachment: fixed;
     width: auto;
@@ -14,7 +14,8 @@ body {
 
 label{
     letter-spacing: 3px;
-    font-size: 1.1em;
+    font-size: 1.5em;
+
 }
 input{
     text-align: center;   
@@ -27,11 +28,13 @@ h1{
     font-size: 1.5em;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    border: 3px solid whitesmoke;
+    border: 1px solid white;
     width: 25rem;
     border-radius: 0.5rem;
     letter-spacing: 4px;
-   
+    -moz-box-shadow: 1px 0px 7px #6d71bf;
+    -webkit-box-shadow: 1px 0px 7px #6d71bf;
+    box-shadow: 1px 0px 7px #6d71bf;
     
 }
 h2{
