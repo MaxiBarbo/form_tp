@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kalam:wght@300&display=swap');
+
+/*Tipos Letras */  
+
+$text-nav:'Kalam', cursive;
+ 
+$text-p: 'Ubuntu', sans-serif; 
+
+/*Size Titulos*/
+
+$size-titulos:5em;
+
+/*Size texto*/
+
+$font-p:1.6em;
+$font-nav:1.5em;
+
+/*Colores */  
+
+$color-nav: #FFD046;    
+$color-t:rgb(77, 16, 134);
+
+$color-footer:rgb(49, 212, 57);
+$color-text-input:#FFD6AF;
+
+/*Bordes*/
+
+$border-img:0.4rem rgb(26, 24, 24) solid;
+$border-videos:0.2rem white solid;
+$border-carr:0.2rem rgb(121, 116, 116) solid;
+$border-fotos:5rem;
+
+/*Sadows*/
+
+$shadow-nav: rgb(240, 247, 241);
+
+/*Trasnsparencias*/
+
+$opacity-fotos:70%;
+
+
+

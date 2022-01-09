@@ -8,21 +8,24 @@ body {
     width: auto;
     height: auto;
 }
+
 .iconify{
     color: black;
 }
 
 label{
-    letter-spacing: 3px;
-    font-size: 1.5em;
-
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    color: blueviolet;
 }
+
 input{
-    text-align: center;   
+    text-align: left;   
 }
 
 h1{
-    color: rgb(77, 16, 134);
+    color:rgb(77, 16, 134);
     text-align: center;
     padding: 5px;
     font-size: 1.5em;
@@ -40,4 +43,18 @@ h1{
 h2{
     font-size: 1.2em;
     color: blueviolet;
+}
+h3{
+    margin-top: 3rem;
+    margin-bottom: 1rem;   
+}
+h4{
+    font-size: 1.3em;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+/* Mobile Styles */
+@media only screen and (max-width: 400px) { 
+ 
+    
 }
