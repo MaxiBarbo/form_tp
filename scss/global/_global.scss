@@ -3,10 +3,8 @@ body {
     flex-direction: column;
     /* background-image: url("../Multimedia/Png.jfif"); */
     background-color: whitesmoke;
-    background-size: cover;
-    background-attachment: fixed;
     width: auto;
-    height: auto;
+    height: 200vh;
 }
 
 .iconify{
@@ -17,7 +15,6 @@ label{
     width: 100%;
     letter-spacing: 1px;
     font-size: 1.2em;
-    color: blueviolet;
 }
 
 input{
@@ -26,6 +23,7 @@ input{
 
 h1{
     color:rgb(77, 16, 134);
+    
     text-align: center;
     padding: 5px;
     font-size: 1.5em;

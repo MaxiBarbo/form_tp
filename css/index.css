@@ -33,16 +33,49 @@ html {
   100% {
     opacity: 1; } }
 
+.inputOne[type=checkbox] {
+  visibility: hidden; }
+
+.inputOne[type=checkbox]:checked + .labelOne {
+  transform: rotate(360deg);
+  background-color: #a1a6af; }
+
+.inputOne[type=checkbox]:checked + .labelOne:before {
+  transform: translateX(60px);
+  background-color: #fff; }
+
+.labelOne {
+  display: flex;
+  width: 100px;
+  height: 40px;
+  border: 3px solid;
+  border-radius: 99em;
+  position: relative;
+  transition: transform 0.75s ease-in-out;
+  transform-origin: 50% 50%;
+  cursor: pointer; }
+
+.labelOne:before {
+  transition: transform 0.75s ease;
+  transition-delay: 0.5s;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background-color: #7a44d1;
+  border-radius: 50%;
+  top: 3px;
+  left: 2px; }
+
 /*Globals*/
 body {
   display: flex;
   flex-direction: column;
   /* background-image: url("../Multimedia/Png.jfif"); */
   background-color: whitesmoke;
-  background-size: cover;
-  background-attachment: fixed;
   width: auto;
-  height: auto; }
+  height: 200vh; }
 
 .iconify {
   color: black; }
@@ -50,8 +83,7 @@ body {
 label {
   width: 100%;
   letter-spacing: 1px;
-  font-size: 1.2em;
-  color: blueviolet; }
+  font-size: 1.2em; }
 
 input {
   text-align: left; }
@@ -263,7 +295,12 @@ h1:hover {
     display: flex;
     flex-direction: row; }
     .inputsBlock .inputsBlockOne .form-label {
-      border-bottom: 1px solid #431270; }
+      border-bottom: 1px solid #67606e; }
+
+#bttn2 {
+  display: flex;
+  gap: 5rem;
+  margin-left: 1rem; }
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
