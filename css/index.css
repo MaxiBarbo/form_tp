@@ -68,6 +68,10 @@ html {
   top: 3px;
   left: 2px; }
 
+.goTop {
+  position: fixed;
+  margin-left: 85%; }
+
 /*Globals*/
 body {
   display: flex;
@@ -75,7 +79,7 @@ body {
   /* background-image: url("../Multimedia/Png.jfif"); */
   background-color: whitesmoke;
   width: auto;
-  height: 200vh; }
+  height: 300vh; }
 
 .iconify {
   color: black; }
@@ -98,7 +102,7 @@ h1 {
   border: 1px solid white;
   width: 25rem;
   border-radius: 0.5rem;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   -moz-box-shadow: 1px 0px 7px #6d71bf;
   -webkit-box-shadow: 1px 0px 7px #6d71bf;
   box-shadow: 1px 0px 7px #6d71bf; }
@@ -140,8 +144,7 @@ h4 {
   letter-spacing: 1px; }
 
 h1:hover {
-  background-color: #6969B3;
-  color: whitesmoke; }
+  background-color: #a6a6db; }
 
 .blocksEhs {
   margin-top: 3rem;
@@ -280,6 +283,7 @@ h1:hover {
 /* Tablet Styles */
 /* Desktop Styles */
 .iconosHeader {
+  margin-top: 2rem;
   display: flex;
   gap: 2rem; }
 

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
@@ -12,7 +11,7 @@
     <link rel="stylesheet" href="../css/index.css"> 
     <title>Activos Fijos</title>
 </head>
-<body>
+<body onload="loadPage()">
     <header>
         <nav class="navbar  navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -26,15 +25,21 @@
                     <a class="nav-link" aria-current="page" href="../index.html"><span id="navText">Home |</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href=""><span id="navText"> ZFIUI5_AA002</span></a>
+                    <a class="nav-link active" href="bajas_y_transfer.html"><span id="navText">Bajas y transferencias ZFIUI5_AA002</span></a>
                   </li>
                 </ul>
               </div>
-        
+            </div>
+            <div>
+              <input class="inputOne" onclick="changeTheme()" type="checkbox" id="toggle"/>
+              <label class="labelOne" for="toggle"></label>
             </div>
           </nav>
     </header>
     <main class="container">
+      <div class="goTop">
+        <span onclick="toTop()" class="iconify" data-icon="majesticons:chevron-double-up" data-width="50" data-height="50"></span>
+      </div>
         <div class="iconosHeader">
             <span class="iconify" data-icon="bi:search" data-width="50" data-height="50"></span><h4>Busqueda de Activos</h4>
             <span class="iconify" data-icon="bi:clipboard-check" data-width="50" data-height="50"></span><h4>Formularios Activos</h4>
@@ -130,7 +135,9 @@
 
     </footer>
      <!-- Inicio Scrip -->
+     <script src="../js/theme.js"></script>
      <script src="../js/activos_fijos.js"></script>
+     <script src="../js/globales.js"></script>
 
      <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

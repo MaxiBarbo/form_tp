@@ -4,7 +4,7 @@ body {
     /* background-image: url("../Multimedia/Png.jfif"); */
     background-color: whitesmoke;
     width: auto;
-    height: 200vh;
+    height: 300vh;
 }
 
 .iconify{
@@ -23,7 +23,6 @@ input{
 
 h1{
     color:rgb(77, 16, 134);
-    
     text-align: center;
     padding: 5px;
     font-size: 1.5em;
@@ -32,12 +31,13 @@ h1{
     border: 1px solid white;
     width: 25rem;
     border-radius: 0.5rem;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     -moz-box-shadow: 1px 0px 7px #6d71bf;
     -webkit-box-shadow: 1px 0px 7px #6d71bf;
-    box-shadow: 1px 0px 7px #6d71bf;
+    box-shadow: 1px 0px 7px #6d71bf;   
     
 }
+
 h2{
     font-size: 1.2em;
     color: blueviolet;
@@ -46,6 +46,7 @@ h3{
     margin-top: 3rem;
     margin-bottom: 1rem;   
 }
+
 h4{
     font-size: 1.3em;
     margin-top: 3rem;
