@@ -39,7 +39,7 @@ function changeTheme() {
 
     // color iconos
     for (let i = 0; i < iconos.length; i++) {
-        iconos[i].style.color = "#8D98A7"
+        iconos[i].style.color = "#8D98A7" 
         localStorage.setItem('iconos', 'dark')
     } 
 
@@ -56,7 +56,7 @@ function changeTheme() {
     } 
 
     //Color Background
-    container.style.background = 'black';
+    container.style.background = '#222823';
     localStorage.setItem('theme', 'dark')
   }
 }
@@ -71,7 +71,7 @@ function loadPage() {
     if (localStorage.getItem('theme') === 'light') {
       container.style.background = 'white'
     } else {
-      container.style.background = 'black'
+      container.style.background = '#222823'
     }
   }
 

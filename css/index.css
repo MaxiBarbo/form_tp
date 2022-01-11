@@ -77,7 +77,7 @@ body {
   display: flex;
   flex-direction: column;
   /* background-image: url("../Multimedia/Png.jfif"); */
-  background-color: whitesmoke;
+  background-color: #222823;
   width: auto;
   height: 300vh; }
 
@@ -87,7 +87,8 @@ body {
 label {
   width: 100%;
   letter-spacing: 1px;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  text-transform: uppercase; }
 
 input {
   text-align: left; }
@@ -209,7 +210,7 @@ h1:hover {
 
 .t2 {
   font-size: 1.2em;
-  text-align: center;
+  margin-bottom: 1rem;
   text-transform: uppercase;
   letter-spacing: 2px; }
 
@@ -291,8 +292,7 @@ h1:hover {
   margin-bottom: 1rem; }
 
 .inputsBlock {
-  margin-left: 1rem;
-  display: none; }
+  margin-left: 1rem; }
   .inputsBlock .inputsBlockOne {
     gap: 1rem;
     width: 60%;
@@ -312,3 +312,34 @@ h1:hover {
     display: flex;
     flex-direction: column;
     width: 80%; } }
+
+.mostrarServicios {
+  width: 80%;
+  text-align: left; }
+
+.service .mb-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem; }
+
+.service .groupOne {
+  width: 40%; }
+
+.service .groupTwo {
+  width: 40%; }
+
+.textArea {
+  width: 50%; }
+
+.blocksix {
+  display: flex;
+  gap: 2rem; }
+
+.mb-1 {
+  width: 20%; }
+  .mb-1 .formFile {
+    text-align: center; }
+
+.newForm {
+  margin-left: 70%;
+  width: 30%; }

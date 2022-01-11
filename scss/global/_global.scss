@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     /* background-image: url("../Multimedia/Png.jfif"); */
-    background-color: whitesmoke;
+    background-color: #222823;
     width: auto;
     height: 300vh;
 }
@@ -15,6 +15,7 @@ label{
     width: 100%;
     letter-spacing: 1px;
     font-size: 1.2em;
+    text-transform: uppercase;
 }
 
 input{

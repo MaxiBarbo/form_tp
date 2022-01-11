@@ -1,0 +1,40 @@
+
+.mostrarServicios{
+    width: 80%;
+    text-align: left;
+}
+.service{
+    
+    .mb-2{
+        display: flex;
+        flex-direction: row;
+        gap:1rem
+    }
+    
+    .groupOne{
+        width: 40%;
+        
+    }
+    .groupTwo{
+        width: 40%;
+    }
+}
+
+.textArea{
+    width: 50%;
+}
+.blocksix{
+    display: flex;
+    gap: 2rem;
+}
+.mb-1{
+    width: 20%;
+    .formFile{
+        text-align: center;
+        
+    }   
+}
+.newForm{
+    margin-left: 70%;
+    width: 30%;
+}
