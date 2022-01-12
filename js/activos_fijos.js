@@ -1,9 +1,12 @@
 $(function(){
 
+  
+
     $("#mostrarFiltros").click(function () {	 
         $('.inputsBlock').toggle("slow");
 
     });
+
 
     $(".newForm").click(function () {	 
         $('.groupTwo').toggle("slow");
@@ -11,7 +14,7 @@ $(function(){
     });
 
     $(".mostrarServicios").click(function () {	 
-        $('.blocksix').toggle("slow");
+        $('.service').toggle("slow");
 
     });
 
@@ -24,6 +27,7 @@ $(function(){
         $('.textArea').toggle("slow");
 
     });
+
 
 
 });

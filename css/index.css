@@ -77,7 +77,7 @@ body {
   display: flex;
   flex-direction: column;
   /* background-image: url("../Multimedia/Png.jfif"); */
-  background-color: gray;
+  background-color: #8D98A7;
   width: auto;
   height: 300vh; }
 
@@ -226,6 +226,7 @@ h1:hover {
   letter-spacing: 2px; }
 
 .blocks {
+  display: none;
   display: flex;
   flex-direction: row;
   margin-top: 1rem;
@@ -298,7 +299,8 @@ h1:hover {
   margin-bottom: 1rem; }
 
 .inputsBlock {
-  margin-left: 1rem; }
+  margin-left: 1rem;
+  display: none; }
   .inputsBlock .inputsBlockOne {
     gap: 1rem;
     width: 60%;
@@ -323,55 +325,50 @@ h1:hover {
   width: 80%;
   text-align: left; }
 
-.service .mb-2 {
+.enviarServicios {
   display: flex;
   flex-direction: row;
-  gap: 1rem; }
+  justify-content: flex-end;
+  gap: 3rem;
+  margin: 1rem;
+  width: 40%; }
 
-.service .label-check {
-  color: blueviolet; }
-
-.service .groupOne {
-  width: 35%; }
-
-.service .groupTwo {
-  width: 35%;
-  display: none; }
-
-.service .textArea {
-  width: 40%;
-  display: none; }
-
-.blocksix {
+.service {
   display: none;
-  gap: 2rem;
-  display: flex;
-  flex-direction: row; }
-
-.mb-1 {
-  width: 20%;
-  display: none; }
-
-.newForm {
-  margin-left: 70%;
-  width: 30%; }
-
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
-  .newForm {
-    margin-left: 10%;
-    width: 80%; }
+  /* Mobile Styles */ }
+  .service .mb-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem; }
+  .service .label-check {
+    color: blueviolet; }
   .service .groupOne {
-    width: 75%; }
+    width: 35%; }
   .service .groupTwo {
-    width: 75%; }
+    width: 35%;
+    display: none; }
   .service .textArea {
-    width: 60%; }
-  .mb-1 {
-    width: 60%; }
-    .mb-1 .enviarServicios {
-      display: flex;
-      justify-content: space-around;
-      margin-top: 1rem; }
-  .mb-2 {
-    margin-left: 1rem; } }
+    width: 40%;
+    display: none; }
+  .service .blocksix {
+    gap: 2rem;
+    display: flex;
+    flex-direction: row; }
+  .service .mb-1 {
+    width: 30%;
+    display: none; }
+    .service .mb-1 .enviarServicios {
+      background-color: green; }
+  .service .newForm {
+    margin-left: 70%;
+    width: 30%; }
+  @media only screen and (max-width: 400px) {
+    .service .newForm {
+      margin-left: 10%;
+      width: 80%; }
+    .service .service .groupOne {
+      width: 75%; }
+    .service .service .groupTwo {
+      width: 75%; }
+    .service .service .textArea {
+      width: 60%; } }

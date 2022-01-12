@@ -5,6 +5,7 @@ const iconos = document.getElementsByClassName("iconify");
 const label = document.getElementsByClassName("form-label");
 const hone = document.getElementsByTagName('h1');
 
+
 // console.log(h1)
 //  Funcion para cambiar de tema claro/oscuro
 let theme = true
@@ -12,6 +13,8 @@ function changeTheme() {
 
   theme = !theme
   if (theme) {
+
+
 
     // color iconos
     for (let i = 0; i < iconos.length; i++) {

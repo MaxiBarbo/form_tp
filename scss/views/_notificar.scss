@@ -43,12 +43,15 @@
     letter-spacing: 2px;  
 }
 .blocks{
+    display: none;
     display: flex;
     flex-direction: row;
     margin-top: 1rem;
     gap: 4rem;
     margin-bottom: 1rem;  
+    
     .inputsOne,.inputsTwo{
+        
         border-left: 1px solid blueviolet;
         border-bottom: 1px solid blueviolet;
         padding: 1.5rem;
@@ -115,6 +118,7 @@
         width: 100%;
     }
  }
+ 
 }                     
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
