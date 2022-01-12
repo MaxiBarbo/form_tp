@@ -16,6 +16,7 @@
     }
     
     .groupOne{
+        
         width: 35%;
         
     }
@@ -26,18 +27,22 @@
     }
     .textArea{
         width: 40%;
+        display: none;
     }
 }
 
 .blocksix{
+    display: none;
     gap: 2rem;
     @include flex-mov(flex,row);
 }
 .mb-1{  
     width: 20%;
+    display: none;
      
 }
 .newForm{
+   
     margin-left: 70%;
     width: 30%;
 }
@@ -69,6 +74,9 @@
         justify-content:space-around;
         margin-top: 1rem;
     }
+}
+.mb-2{
+    margin-left: 1rem;
 }
 
 }
