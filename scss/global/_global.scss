@@ -43,9 +43,10 @@ h2{
     font-size: 1.2em;
     color: blueviolet;
 }
-h3{
-    margin-top: 3rem;
-    margin-bottom: 1rem;   
+.h3{
+    color:blueviolet;
+    font-size: 1.5em;
+      
 }
 
 h4{
@@ -53,6 +54,11 @@ h4{
     margin-top: 3rem;
     margin-bottom: 1rem;
 }
+.form-control{
+    border-radius: 0.5rem;
+    
+}
+
 /* Mobile Styles */
 @media only screen and (max-width: 400px) { 
  

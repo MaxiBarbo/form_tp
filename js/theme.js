@@ -56,7 +56,7 @@ function changeTheme() {
     } 
 
     //Color Background
-    container.style.background = '#222823';
+    container.style.background = '#2F2F2F';
     localStorage.setItem('theme', 'dark')
   }
 }
@@ -71,7 +71,7 @@ function loadPage() {
     if (localStorage.getItem('theme') === 'light') {
       container.style.background = 'white'
     } else {
-      container.style.background = '#222823'
+      container.style.background = 'black'
     }
   }
 

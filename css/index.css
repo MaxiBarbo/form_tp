@@ -112,14 +112,17 @@ h2 {
   font-size: 1.2em;
   color: blueviolet; }
 
-h3 {
-  margin-top: 3rem;
-  margin-bottom: 1rem; }
+.h3 {
+  color: blueviolet;
+  font-size: 1.5em; }
 
 h4 {
   font-size: 1.3em;
   margin-top: 3rem;
   margin-bottom: 1rem; }
+
+.form-control {
+  border-radius: 0.5rem; }
 
 /* Mobile Styles */
 .logotp {
@@ -213,11 +216,6 @@ h1:hover {
   margin-bottom: 1rem;
   text-transform: uppercase;
   letter-spacing: 2px; }
-
-.mb-3 {
-  margin-top: 1rem;
-  width: 100%;
-  margin-bottom: 1rem; }
 
 .blocks {
   display: flex;
@@ -322,24 +320,45 @@ h1:hover {
   flex-direction: row;
   gap: 1rem; }
 
+.service .label-check {
+  color: blueviolet; }
+
 .service .groupOne {
-  width: 40%; }
+  width: 35%; }
 
 .service .groupTwo {
+  width: 35%;
+  display: none; }
+
+.service .textArea {
   width: 40%; }
 
-.textArea {
-  width: 50%; }
-
 .blocksix {
+  gap: 2rem;
   display: flex;
-  gap: 2rem; }
+  flex-direction: row; }
 
 .mb-1 {
   width: 20%; }
-  .mb-1 .formFile {
-    text-align: center; }
 
 .newForm {
   margin-left: 70%;
   width: 30%; }
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .newForm {
+    margin-left: 10%;
+    width: 80%; }
+  .service .groupOne {
+    width: 75%; }
+  .service .groupTwo {
+    width: 75%; }
+  .service .textArea {
+    width: 60%; }
+  .mb-1 {
+    width: 60%; }
+    .mb-1 .enviarServicios {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 1rem; } }

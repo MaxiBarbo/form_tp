@@ -9,32 +9,66 @@
         display: flex;
         flex-direction: row;
         gap:1rem
+        
+    }
+    .label-check{
+        color: blueviolet;    
     }
     
     .groupOne{
-        width: 40%;
+        width: 35%;
         
     }
     .groupTwo{
+        width: 35%;
+        display: none;
+        
+    }
+    .textArea{
         width: 40%;
     }
 }
 
-.textArea{
-    width: 50%;
-}
 .blocksix{
-    display: flex;
     gap: 2rem;
+    @include flex-mov(flex,row);
 }
-.mb-1{
+.mb-1{  
     width: 20%;
-    .formFile{
-        text-align: center;
-        
-    }   
+     
 }
 .newForm{
     margin-left: 70%;
     width: 30%;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) { 
+    .newForm{
+        margin-left: 10%;
+        width: 80%;
+
+    }
+    .service{
+        .groupOne{
+            width: 75%;
+            
+        }
+        .groupTwo{
+            width: 75%;
+            
+        }
+        .textArea{
+            width: 60%;
+        }
+}
+.mb-1{
+    width: 60%;
+    .enviarServicios{
+        display: flex;
+        justify-content:space-around;
+        margin-top: 1rem;
+    }
+}
+
 }
