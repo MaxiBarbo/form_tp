@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     /* background-image: url("../Multimedia/Png.jfif"); */
-    background-color: #222823;
+    background-color: gray;
     width: auto;
     height: 300vh;
 }
@@ -42,6 +42,9 @@ h1{
 h2{
     font-size: 1.2em;
     color: blueviolet;
+}
+h3{
+    color: grey;
 }
 .h3{
     color:blueviolet;

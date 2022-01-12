@@ -21,7 +21,7 @@ function changeTheme() {
 
     // color label
     for (let i = 0; i < label.length; i++) {
-      label[i].style.color = "blue"
+      label[i].style.color = "black"
       localStorage.setItem('label', 'light') 
     }  
 
@@ -71,7 +71,7 @@ function loadPage() {
     if (localStorage.getItem('theme') === 'light') {
       container.style.background = 'white'
     } else {
-      container.style.background = 'black'
+      container.style.background = '#2F2F2F'
     }
   }
 
@@ -104,7 +104,7 @@ if (localStorage.getItem('label')) {
 
       for (let i = 0; i < label.length; i++) {
 
-        label[i].style.color = 'blue'
+        label[i].style.color = 'black'
   }
     } 
   
