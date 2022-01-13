@@ -7,19 +7,18 @@
     flex-wrap: wrap;
 }
 .headerBuscar{
-    width: 50%;
+    width: 60%;
     @include flex-mov(flex,row);
     margin-top: 3rem;
     margin-bottom: 4rem;
     height: 6rem;
-    gap: 2rem;
+    gap: 3rem;
     
 }
 
-.icosTwo{
+.btn-group{
     @include flex-mov(flex,row); 
-    gap:2rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
     width: 10%;
     
 }

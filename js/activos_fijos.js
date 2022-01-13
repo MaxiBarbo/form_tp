@@ -38,6 +38,10 @@ $(function(){
 
     });
 
+    $("#mostraResumen").click(function () {	 
+        $('.resumen').toggle("slow");
+
+    });
 
 
 

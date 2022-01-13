@@ -16,18 +16,18 @@
     <header>
         <nav class="navbar  navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <div class="logotp"><a href="../index.html"><img src="../imagenes/nombre_telecom.jpg"><img src="../imagenes/circukigif.gif"></a></div>
+                <div class="logotp"><a href="query_browser.html"><img src="../imagenes/nombre_telecom.jpg"><img src="../imagenes/circukigif.gif"></a></div>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="query_browser.html"><span id="navText">Navegador de Consultas |</span></a>
+                    <a class="nav-link active" aria-current="page" href="navegador_vistas.html"><span id="navText">Navegador de Consultas |</span></a>
                   </li>
-                  <!-- <li class="nav-item">
-                    <a class="nav-link" href="mantenimiento.html"><span id="navText">Mantenimiento Edificio |</span></a>
-                  </li> -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="query_browser.html"><span class="iconify" data-icon="dashicons:arrow-left-alt2" data-width="25" data-height="25"></span></a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -41,33 +41,13 @@
         <h1 id="mostraEstandar">Estandar</h1>
 
         <div class="headerBuscar">
-            <div class="icos">
+            <div class="">
                 <h5>Visitas</h5>
                 <span class="iconify" data-icon="mdi:counter" data-width="40" data-height="40" style="margin-left: 1rem;"></span>
-            </div>
-
-            <form class="d-flex">
-                <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search" style="height: 4rem;width: 13rem;">
-                <button class="btn btn-outline-primary" type="submit">Search</button>
-            </form>
-
-        </div>
-
-        <div class="icosTwo">
-            <a href="#"><span class="iconify" data-icon="eos-icons:rotating-gear" data-width="40" data-height="40"></span></a> 
-
-            <div class="btn-group">
-                <span class="iconify" data-icon="foundation:page-export-doc" data-width="40" data-height="40"></span>
-                <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                
-
-               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Nombre</a></li>
-                <li><a class="dropdown-item" href="#">Descripcion</a></li>  
-                <li><a class="dropdown-item" href="#">Favoritos</a></li>                  
-                </ul>
+                <a href="#"><span class="iconify" data-icon="eos-icons:rotating-gear" data-width="40" data-height="40" style="margin-left: 5rem;"></span></a> 
             </div>
         </div>
+
 
       <div class="headerVisitas">
     
@@ -96,7 +76,21 @@
             <span class="iconify" data-icon="ant-design:question-circle-outlined" data-width="30" data-height="30"></span>
         </div>
 
-        
+        <div class="btn-group">
+
+            <form class="d-flex">
+                <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search" style="height: 4rem;width: 13rem;">
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+                <span class="iconify" data-icon="foundation:page-export-doc" data-width="40" data-height="40"style="margin-left: 3rem;"></span>
+            </form>
+
+            <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"></button>
+           <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Nombre</a></li>
+            <li><a class="dropdown-item" href="#">Descripcion</a></li>  
+            <li><a class="dropdown-item" href="#">Favoritos</a></li>                  
+            </ul>
+        </div>
 
         
     </div>

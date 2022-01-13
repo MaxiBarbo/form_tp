@@ -149,6 +149,9 @@ h6 {
   margin-left: 1rem;
   letter-spacing: 2px; }
 
+.h6 {
+  margin-left: 35%; }
+
 .form-control {
   border-radius: 0.5rem; }
 
@@ -420,19 +423,18 @@ h1:hover {
   flex-wrap: wrap; }
 
 .headerBuscar {
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: row;
   margin-top: 3rem;
   margin-bottom: 4rem;
   height: 6rem;
-  gap: 2rem; }
+  gap: 3rem; }
 
-.icosTwo {
+.btn-group {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
-  margin-right: 1rem;
+  margin-right: 2rem;
   width: 10%; }
 
 /* Mobile Styles */
@@ -445,3 +447,20 @@ h1:hover {
 
 .headerBuscar {
   justify-content: start; }
+
+.headerApi {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  gap: 3rem; }
+
+.buscarApi {
+  display: flex;
+  flex-direction: row;
+  width: 35%;
+  gap: 1rem; }
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .buscarApi {
+    width: 90%; } }
