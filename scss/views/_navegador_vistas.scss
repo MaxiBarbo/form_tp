@@ -1,0 +1,40 @@
+
+.headerVisitas{
+    margin-top: 3rem;
+    margin-left: 1rem;
+    @include flex-mov(flex,row);
+    display: flex;
+    flex-wrap: wrap;
+}
+.headerBuscar{
+    width: 50%;
+    @include flex-mov(flex,row);
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    height: 6rem;
+    gap: 2rem;
+    
+}
+
+.icosTwo{
+    @include flex-mov(flex,row); 
+    gap:2rem;
+    margin-right: 1rem;
+    width: 10%;
+    
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) { 
+.headerVisitas{     
+    @include flex-mov(flex,column-reverse);
+
+    }
+    .icos{
+        margin-bottom: 2rem;       
+    }   
+}
+.headerBuscar{
+    justify-content: start;
+
+}

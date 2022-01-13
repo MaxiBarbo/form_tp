@@ -28,6 +28,17 @@ $(function(){
 
     });
 
+    $("#mostrarQueries").click(function () {	 
+        $('.queries').toggle("slow");
+
+    });
+
+    $("#mostraEstandar").click(function () {	 
+        $('.headerVisitas').toggle("slow");
+
+    });
+
+
 
 
 });
