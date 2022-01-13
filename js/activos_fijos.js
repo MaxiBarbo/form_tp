@@ -43,6 +43,17 @@ $(function(){
 
     });
 
+    $("#mostrarFiltro").click(function () {	 
+        $('.IncidenteFiltro').toggle("slow");
+
+    });
+
+    $("#mostrarIncidente").click(function () {	 
+        $('.incidente').toggle("slow");
+
+    });
+
+
 
 
 });

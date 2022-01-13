@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+
+
+    <link rel="stylesheet" href="../css/index.css"> 
+    <title>Gestionar Incidencias</title>
+</head>
+<body onload="loadPage()">
+    <header>
+        <nav class="navbar  navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <div class="logotp"><a href="../index.html"><img src="../imagenes/nombre_telecom.jpg"><img src="../imagenes/circukigif.gif"></a></div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="gestionar_incidencias.html"><span id="navText">Gestion Incidente |</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html"><span class="iconify" data-icon="dashicons:arrow-left-alt2" data-width="25" data-height="25"></span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <input class="inputOne" onclick="changeTheme()" type="checkbox" id="toggle"/>
+              <label class="labelOne" for="toggle"></label>
+            </div>
+          </nav>
+    </header>
+        <main class="container">
+
+            <h1 id="mostrarFiltro">Filtro Estandar</h1>
+
+            <div class="IncidenteFiltro">
+                <form class="buscarIncidente">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="height: 3.5rem;">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-outline-secondary" style="width: 10rem;">Grupo</button>
+                        <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Enviar Mail</a></li>
+                        <li><a class="dropdown-item" href="#">Guardar como Mosaico</a></li>  
+                        <!-- <li><a class="dropdown-item" href="#">Favoritos</a></li>                   -->
+                        </ul>
+                    </div>
+                </form>
+
+                
+
+                    <form class="headerIncidente">
+                        <div class="col-auto">
+                            <select class="form-select" id="autoSizingSelect">
+                            <option selected>Tipo Incidente</option>
+                            <option value="1">Casi Accidente</option>
+                            <option value="2">Incidencia</option>
+                            <option value="3">Observacion de la Seguridad</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="Fecha" class="form-control" placeholder="Fecha" aria-label="" aria-describedby="">
+                
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Ubicacion" aria-label="" aria-describedby="">
+                
+                        </div>
+
+                        <div class="col-auto">
+                            <select class="form-select" id="autoSizingSelect">
+                            <option selected>Status</option>
+                            <option value="1">Abiertos de Nuevo</option>
+                            <option value="2">Incidencia</option>
+                            <option value="3">Observacion de la Seguridad</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Persona Implicada" aria-label="" aria-describedby="">
+                        </div>
+
+                        <div class="adaptarFiltro">
+                            <h4>Adaptar Filtro</h4>
+                            <button class="btn btn-outline-primary" type="submit">Ir</button>
+                        </div>
+                      </form>  
+               
+                <div id="borderSep"></div>
+            </div>
+
+            <h1 id="mostrarIncidente">Incidente</h1>
+            
+            <div class="incidente">
+
+            <div class="incidenteStandar">
+            <h4>Incidente (0)</h4>
+            
+            <div class="adjDocOne">
+                <span class="iconify" data-icon="eos-icons:rotating-gear" data-width="30" data-height="30"></span>
+                <span class="iconify" data-icon="foundation:page-export-doc" data-width="30" data-height="30"style="margin-left: 1rem;"></span>
+                <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Nombre</a></li>
+                <li><a class="dropdown-item" href="#">Descripcion</a></li>  
+                <li><a class="dropdown-item" href="#">Favoritos</a></li>                  
+                </ul>
+            </div>
+
+            </div>
+
+            <div id="borderSep"></div>
+
+            <div class="titulosIncidentes">  
+                
+                <h4>Id</h4> 
+                <h4>Categoria</h4>
+                <h4>Tratamiento</h4>
+                <h4>Fecha / Hora</h4>
+                <h4>Ubicacion</h4>
+                <h4>Estado</h4> 
+            </div>
+            
+        </div>
+            
+            
+        </main>
+
+
+    <footer>
+
+    </footer>
+    <!-- Inicio Scrip -->
+    <script src="../js/theme.js"></script>
+    <script src="../js/activos_fijos.js"></script>
+    
+    <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Fin Script -->
+    </body>
+    </html>

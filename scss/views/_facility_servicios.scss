@@ -12,6 +12,7 @@
 }
 
 .service{
+    
     display: none;
     .mb-2{
         display: flex;
@@ -25,11 +26,11 @@
     
     .groupOne{
         
-        width: 35%;
+        width: 50%;
         
     }
     .groupTwo{
-        width: 35%;
+        width: 50%;
         display: none;
         
     }
@@ -38,45 +39,37 @@
         display: none;
     }
     
-    
-
 .blocksix{
     gap: 2rem;
     @include flex-mov(flex,row);
 }
-.mb-1{  
-    width: 30%;
-    display: none;
-     .enviarServicios{
-         background-color: green;
-     }
-}
+
 .newForm{
    
     margin-left: 70%;
     width: 30%;
 }
-
+.mb-1{
+    display: none;
+}
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) { 
     
     .newForm{
         margin-left: 10%;
-        width: 80%;
+        width: 100%;
     }
     
     .service{
-        .groupOne{
-            width: 75%;    
-        }
+        
         .groupTwo{
-            width: 75%;   
+            width: 80%;   
         }
-        .textArea{
-            width: 60%;
-        }
-      
+     
+}
+.textArea{
+    width: 70%;
 }
 }
 }

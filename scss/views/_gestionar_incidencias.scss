@@ -1,0 +1,49 @@
+
+.headerIncidente{
+    width: 100%;
+    @include flex-mov(flex,row);
+    gap: 1rem;
+        .adaptarFiltro{
+        @include flex-mov(flex,row); 
+        align-items: center;
+    }
+
+}
+.buscarIncidente{
+    @include flex-mov(flex,row);
+    width:50%;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+.incidenteStandar{
+    @include flex-mov(flex,row);
+    justify-content: space-between;
+    margin-right: 1rem;
+    .adjDocOne{
+        margin-right: 1rem;
+    }
+}
+.titulosIncidentes{
+    @include flex-mov(flex,row);
+    justify-content: space-evenly;
+    
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) { 
+    .headerIncidente{
+        width: 70%;
+        @include flex-mov(flex,column);
+        
+    }
+    .buscarIncidente{
+        @include flex-mov(flex,row);
+        width:80%;
+        margin-top: 3rem;
+        
+    }
+    .titulosIncidentes{
+        @include flex-mov(flex,column);
+        margin-top: 2rem;
+    }
+}

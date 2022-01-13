@@ -84,7 +84,7 @@ body {
 #borderSep {
   border-bottom: 0.1rem solid blueviolet;
   color: blueviolet;
-  width: 100rem;
+  width: 100%;
   height: 1px;
   margin-top: 2rem;
   margin-bottom: 2rem; }
@@ -130,10 +130,9 @@ h3 {
 h4 {
   color: grey;
   text-transform: uppercase;
-  width: 40%;
   letter-spacing: 3px;
   font-size: 1em;
-  padding: 0.6rem;
+  padding: 0.7rem;
   border-radius: 0.5rem; }
 
 h4:hover {
@@ -366,9 +365,9 @@ h1:hover {
   .service .label-check {
     color: blueviolet; }
   .service .groupOne {
-    width: 35%; }
+    width: 50%; }
   .service .groupTwo {
-    width: 35%;
+    width: 50%;
     display: none; }
   .service .textArea {
     width: 40%;
@@ -377,24 +376,19 @@ h1:hover {
     gap: 2rem;
     display: flex;
     flex-direction: row; }
-  .service .mb-1 {
-    width: 30%;
-    display: none; }
-    .service .mb-1 .enviarServicios {
-      background-color: green; }
   .service .newForm {
     margin-left: 70%;
     width: 30%; }
+  .service .mb-1 {
+    display: none; }
   @media only screen and (max-width: 400px) {
     .service .newForm {
       margin-left: 10%;
-      width: 80%; }
-    .service .service .groupOne {
-      width: 75%; }
+      width: 100%; }
     .service .service .groupTwo {
-      width: 75%; }
-    .service .service .textArea {
-      width: 60%; } }
+      width: 80%; }
+    .service .textArea {
+      width: 70%; } }
 
 .queries {
   display: none; }
@@ -403,8 +397,7 @@ h1:hover {
     flex-direction: row;
     gap: 1rem;
     margin-left: 1rem;
-    margin-right: 1rem;
-    justify-content: space-around; }
+    margin-right: 1rem; }
   .queries .checkTitulos {
     display: flex;
     flex-direction: row-reverse;
@@ -448,19 +441,65 @@ h1:hover {
 .headerBuscar {
   justify-content: start; }
 
-.headerApi {
-  display: flex;
-  flex-direction: row;
-  width: 60%;
-  gap: 3rem; }
+.resumen {
+  display: none;
+  /* Mobile Styles */ }
+  .resumen .headerApi {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    gap: 3rem; }
+  .resumen .buscarApi {
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+    gap: 1rem; }
+  @media only screen and (max-width: 400px) {
+    .resumen .buscarApi {
+      width: 90%; } }
 
-.buscarApi {
+.headerIncidente {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  width: 35%;
   gap: 1rem; }
+  .headerIncidente .adaptarFiltro {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+
+.buscarIncidente {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  margin-bottom: 2rem;
+  gap: 1rem; }
+
+.incidenteStandar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 1rem; }
+  .incidenteStandar .adjDocOne {
+    margin-right: 1rem; }
+
+.titulosIncidentes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
-  .buscarApi {
-    width: 90%; } }
+  .headerIncidente {
+    width: 70%;
+    display: flex;
+    flex-direction: column; }
+  .buscarIncidente {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-top: 3rem; }
+  .titulosIncidentes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem; } }
