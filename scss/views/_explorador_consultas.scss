@@ -1,5 +1,6 @@
 
 .queries{
+display: none;
 
     .navExplorador{
         @include flex-mov(flex,row);

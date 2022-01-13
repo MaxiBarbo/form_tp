@@ -48,7 +48,7 @@ function changeTheme() {
 
     // color label
     for (let i = 0; i < label.length; i++) {
-      label[i].style.color = "white"
+      label[i].style.color = "whitesmoke"
       localStorage.setItem('label', 'dark') 
     } 
 
@@ -107,7 +107,7 @@ if (localStorage.getItem('label')) {
 
       for (let i = 0; i < label.length; i++) {
 
-        label[i].style.color = 'black'
+        label[i].style.color = 'whitesmoke'
   }
     } 
   

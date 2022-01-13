@@ -74,17 +74,21 @@ h4{
     // box-shadow: 1px 0px 7px #6d71bf;
 }
 h4:hover{
-    background-color: #c9c9dd;
+    // color: #c9c9dd;
+    color: blueviolet;
       
 }
-
 h5{
     color: grey;
     margin-left: 1rem;
     letter-spacing: 2px;
     
 }
-
+h6{
+    color: grey;
+    margin-left: 1rem;
+    letter-spacing: 2px;  
+}
 .form-control{
     border-radius: 0.5rem;
     

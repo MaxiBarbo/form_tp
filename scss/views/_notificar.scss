@@ -50,16 +50,20 @@
     gap: 4rem;
     margin-bottom: 1rem;  
     
-    .inputsOne,.inputsTwo{
+    .inputsOne,
+    .inputsTwo{
         
         border-left: 1px solid blueviolet;
         border-bottom: 1px solid blueviolet;
         padding: 1.5rem;
         @include cajas-iframe(25rem,18rem,0rem)
     } 
-    .inputsThree,.inputsFour{
+    .inputsThree,
+    .inputsFour{
+        display: none;
         padding: 1rem;
         margin:1rem;
+        
         
         
     }  
