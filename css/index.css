@@ -63,7 +63,7 @@ html {
   position: absolute;
   width: 30px;
   height: 30px;
-  background-image: url("/imagenes/circulo2tp.jpg");
+  background-image: url("../imagenes/circulo2tp.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 115%;
