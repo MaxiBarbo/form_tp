@@ -28,6 +28,22 @@
     justify-content: space-evenly;
     
 }
+.IncidenteFiltro{
+    display: none;
+    
+}
+.incidente{
+    display: none;
+}
+.btn-group{
+    width: 15%;
+    .dropdown-menu{
+        width: 20rem;
+        .form-check{
+            margin-left: 0.5rem;
+        }
+    }
+}
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) { 
@@ -38,7 +54,7 @@
     }
     .buscarIncidente{
         @include flex-mov(flex,row);
-        width:80%;
+        width: 100%;
         margin-top: 3rem;
         
     }

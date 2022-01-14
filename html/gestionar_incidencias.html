@@ -16,7 +16,12 @@
     <header>
         <nav class="navbar  navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <div class="logotp"><a href="../index.html"><img src="../imagenes/nombre_telecom.jpg"><img src="../imagenes/circukigif.gif"></a></div>
+                  <div class="logotp">
+                    <a href="../index.html"> 
+                    <img src="../imagenes/nombre_telecom.jpg"></a> 
+                    <input class="inputOne" onclick="changeTheme()" type="checkbox" id="toggle"/>
+                    <label class="labelOne" for="toggle"></label>
+                </div>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -31,9 +36,9 @@
                 </ul>
               </div>
             </div>
-            <div>
-              <input class="inputOne" onclick="changeTheme()" type="checkbox" id="toggle"/>
-              <label class="labelOne" for="toggle"></label>
+            <div class="iconosLogin">
+              <span class="iconify" data-icon="akar-icons:bell" data-width="30" data-height="30"></span>
+              <span class="iconify" data-icon="carbon:user-avatar-filled-alt" data-width="30" data-height="30"></span>
             </div>
           </nav>
     </header>
@@ -46,20 +51,19 @@
                     <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="height: 3.5rem;">
                     <button class="btn btn-outline-primary" type="submit">Search</button>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-outline-secondary" style="width: 10rem;">Grupo</button>
+                        <span class="iconify" data-icon="uiw:document" data-width="33" data-height="35"></span>
                         <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                         <span class="visually-hidden">Toggle Dropdown</span>
                         </button>
                         <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Enviar Mail</a></li>
                         <li><a class="dropdown-item" href="#">Guardar como Mosaico</a></li>  
-                        <!-- <li><a class="dropdown-item" href="#">Favoritos</a></li>                   -->
+                                        
                         </ul>
                     </div>
                 </form>
-
-                
-
+               
+    
                     <form class="headerIncidente">
                         <div class="col-auto">
                             <select class="form-select" id="autoSizingSelect">
@@ -71,7 +75,7 @@
                         </div>
 
                         <div class="mb-3">
-                            <input type="Fecha" class="form-control" placeholder="Fecha" aria-label="" aria-describedby="">
+                            <input type="date" class="form-control" placeholder="Fecha" aria-label="" aria-describedby="">
                 
                         </div>
 
@@ -98,6 +102,93 @@
                             <button class="btn btn-outline-primary" type="submit">Ir</button>
                         </div>
                       </form>  
+
+                      <!-- Example single danger button -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        GRUPO
+                        </button>
+                        <ul class="dropdown-menu">
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="">
+                                
+                                  <h6>Default checkbox</h6>
+                                </label>
+                              </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="">
+                                
+                                  <h6>Default checkbox</h6>
+                                </label>
+                              </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="">
+                                
+                                  <h6>Default checkbox</h6>
+                                </label>
+                              </div>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="">
+                                
+                                  <h6>Default checkbox</h6>
+                                </label>
+                              </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="">
+                                
+                                  <h6>Default checkbox</h6>
+                                </label>
+                              </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="">
+                                
+                                  <h6>Default checkbox</h6>
+                                </label>
+                              </div>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="">
+                                
+                                  <h6>Default checkbox</h6>
+                                </label>
+                              </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="">
+                                
+                                  <h6>Default checkbox</h6>
+                                </label>
+                              </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="">
+                                
+                                  <h6>Default checkbox</h6>
+                                </label>
+                              </div>
+                        </li>
+                        </ul>
+                    </div>
                
                 <div id="borderSep"></div>
             </div>
@@ -107,7 +198,7 @@
             <div class="incidente">
 
             <div class="incidenteStandar">
-            <h4>Incidente (0)</h4>
+            <h4>Incidentes (0)</h4>
             
             <div class="adjDocOne">
                 <span class="iconify" data-icon="eos-icons:rotating-gear" data-width="30" data-height="30"></span>
@@ -135,7 +226,8 @@
             </div>
             
         </div>
-            
+        
+        <div id="borderSep"></div>
             
         </main>
 

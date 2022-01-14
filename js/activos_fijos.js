@@ -19,7 +19,7 @@ $(function(){
     });
 
     $(".mostrarAdjuntar").click(function () {	 
-        $('.mb-1').toggle("slow");
+        $('.adjuntar').toggle("slow");
 
     });
 
@@ -50,6 +50,11 @@ $(function(){
 
     $("#mostrarIncidente").click(function () {	 
         $('.incidente').toggle("slow");
+
+    });
+
+    $("#mostrarBandeja").click(function () {	 
+        $('.bandeja').toggle("slow");
 
     });
 

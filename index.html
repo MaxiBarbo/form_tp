@@ -16,7 +16,11 @@
     <header>
         <nav class="navbar  navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <div class="logotp"><img src="imagenes/nombre_telecom.jpg"><img src="imagenes/circukigif.gif"></div>
+                <div class="logotp">
+                    <img src="imagenes/nombre_telecom.jpg">
+                    <input class="inputOne" onclick="changeTheme()" type="checkbox" id="toggle"/>
+                    <label class="labelOne" for="toggle"></label>
+                </div>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -36,11 +40,14 @@
                   </li>
                 </ul>
               </div>
+
+              <div class="iconosLogin">
+                <span class="iconify" data-icon="akar-icons:bell" data-width="30" data-height="30"></span>
+                <span class="iconify" data-icon="carbon:user-avatar-filled-alt" data-width="30" data-height="30"></span>
+              </div>
+
             </div>
-            <div>
-              <input class="inputOne" onclick="changeTheme()" type="checkbox" id="toggle"/>
-              <label class="labelOne" for="toggle"></label>
-            </div>
+            
           </nav>
             
     </header>
@@ -67,18 +74,17 @@
                 <span class="iconify" data-icon="ic:outline-edit-calendar" data-width="50"></span>
             </div></a>
 
-            <div class="blockThree">
+            <a href="html/bandeja_entrada.html"> <div class="blockThree">
                 <h2>Mi Bandeja de Entrada</h2>
                 <span class="spanTwo">Gestion de Controles</span>
-                <span class="iconify" data-icon="ic:outline-mail" data-width="50"></span>
+                <span class="iconify" data-icon="line-md:email-twotone" data-width="50" data-height="50"></span>
+            </div></a>
 
-            </div>
-
-            <div class="blockFour">
+            <a href="html/reporte_seguridad.html"><div class="blockFour">
                 <h2>Reporte Controles de Seguridad</h2>
                 <span class="spanTwo">ZEHZ_1010</span>
                 <span class="iconify" data-icon="ic:outline-post-add" data-width="50"></span>
-            </div>
+            </div></a> 
         </div>
       
     </main>

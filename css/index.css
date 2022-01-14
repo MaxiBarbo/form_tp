@@ -38,7 +38,7 @@ html {
 
 .inputOne[type=checkbox]:checked + .labelOne {
   transform: rotate(360deg);
-  background-color: #a1a6af; }
+  background-color: #9CA3DB; }
 
 .inputOne[type=checkbox]:checked + .labelOne:before {
   transform: translateX(60px);
@@ -61,11 +61,14 @@ html {
   content: "";
   display: block;
   position: absolute;
-  width: 28px;
-  height: 28px;
-  background-color: #7a44d1;
+  width: 30px;
+  height: 30px;
+  background-image: url("/imagenes/circulo2tp.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 115%;
   border-radius: 50%;
-  top: 3px;
+  top: 2px;
   left: 2px; }
 
 .goTop {
@@ -156,13 +159,24 @@ h6 {
 
 /* Mobile Styles */
 .logotp {
-  margin-right: 3rem; }
+  display: flex;
+  flex-direction: row;
+  margin-right: 3rem;
+  margin-top: 1rem; }
 
 #navText {
   letter-spacing: 1px;
   font-size: 1.5em;
   color: #1e6cfd; }
 
+.iconosLogin {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  gap: 3rem;
+  margin-right: 1rem; }
+
+/* Mobile Styles */
 /*Tipos Letras */
 /*Size Titulos*/
 /*Size texto*/
@@ -379,7 +393,7 @@ h1:hover {
   .service .newForm {
     margin-left: 70%;
     width: 30%; }
-  .service .mb-1 {
+  .service .adjuntar {
     display: none; }
   @media only screen and (max-width: 400px) {
     .service .newForm {
@@ -488,6 +502,19 @@ h1:hover {
   flex-direction: row;
   justify-content: space-evenly; }
 
+.IncidenteFiltro {
+  display: none; }
+
+.incidente {
+  display: none; }
+
+.btn-group {
+  width: 15%; }
+  .btn-group .dropdown-menu {
+    width: 20rem; }
+    .btn-group .dropdown-menu .form-check {
+      margin-left: 0.5rem; }
+
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
   .headerIncidente {
@@ -497,9 +524,23 @@ h1:hover {
   .buscarIncidente {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 100%;
     margin-top: 3rem; }
   .titulosIncidentes {
     display: flex;
     flex-direction: column;
     margin-top: 2rem; } }
+
+.buscarBandeja {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  gap: 1rem; }
+
+.bandeja {
+  display: none; }
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .buscarBandeja {
+    width: 100%; } }

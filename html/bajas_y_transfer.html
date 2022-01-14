@@ -17,8 +17,13 @@
 <body onload="loadPage()">
     <header>
         <nav class="navbar  navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <div class="logotp"><img src="../imagenes/nombre_telecom.jpg"><img src="../imagenes/circukigif.gif"></div>
+          <div class="container-fluid">
+              <div class="logotp">
+                <a href="query_browser.html"> 
+                <img src="../imagenes/nombre_telecom.jpg"></a> 
+                <input class="inputOne" onclick="changeTheme()" type="checkbox" id="toggle"/>
+                <label class="labelOne" for="toggle"></label>
+            </div>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -39,9 +44,9 @@
                 </ul>
               </div>
             </div>
-            <div>
-              <input class="inputOne" onclick="changeTheme()" type="checkbox" id="toggle"/>
-              <label class="labelOne" for="toggle"></label>
+            <div class="iconosLogin">
+              <span class="iconify" data-icon="akar-icons:bell" data-width="30" data-height="30"></span>
+              <span class="iconify" data-icon="carbon:user-avatar-filled-alt" data-width="30" data-height="30"></span>
             </div>
           </nav>
 

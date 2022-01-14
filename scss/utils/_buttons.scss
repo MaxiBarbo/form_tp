@@ -5,7 +5,8 @@
   }
   .inputOne[type=checkbox]:checked + .labelOne {
     transform: rotate(360deg);
-    background-color: rgb(161, 166, 175);
+    background-color: #9CA3DB;
+    
   }
   .inputOne[type=checkbox]:checked + .labelOne:before {
     transform: translateX(60px);
@@ -29,11 +30,15 @@
     content: "";
     display: block;
     position: absolute;
-    width: 28px;
-    height: 28px;
-    background-color: rgb(122, 68, 209);
+    width: 30px;
+    height: 30px;
+    // background-color: rgb(122, 68, 209);
+    background-image: url("/imagenes/circulo2tp.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 115%;
     border-radius: 50%;
-    top: 3px;
+    top: 2px;
     left: 2px;
   }
   //Button Go-Top
