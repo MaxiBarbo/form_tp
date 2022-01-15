@@ -164,6 +164,8 @@ h6 {
   margin-right: 2rem;
   margin-top: 2rem;
   margin-bottom: 1rem; }
+  .logotp .imgLogo {
+    height: 2.5rem; }
 
 #navText {
   letter-spacing: 1px;
