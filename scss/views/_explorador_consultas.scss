@@ -12,11 +12,12 @@ display: none;
         
     }
     .checkTitulos{
-        @include flex-mov(flex,row-reverse);
-        align-items: flex-start;
+        @include flex-mov(flex,row);
+        align-items: center;
         justify-content:left;
         margin-bottom: 2rem;
         gap: 0.1rem;
+        margin-left: 1rem;
                 
     }  
     
