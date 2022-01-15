@@ -8,7 +8,7 @@ const hone = document.getElementsByTagName('h1');
 
 // console.log(h1)
 //  Funcion para cambiar de tema claro/oscuro
-let theme = true
+let theme = false;
 function changeTheme() {
 
   theme = !theme
