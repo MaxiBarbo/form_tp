@@ -72,6 +72,17 @@
     margin-bottom: 2rem;
     margin-top: 1rem;
 }
+.ir-arriba{
+    display:none;
+    background-repeat:no-repeat;
+    font-size:20px;
+    color:blueviolet;
+    cursor:pointer;
+    position:fixed;
+    bottom:25rem;
+    right:2rem;
+    z-index:2;
+  }
 .s1 {
     display: none;
     -webkit-transition: opacity 1000ms linear;
