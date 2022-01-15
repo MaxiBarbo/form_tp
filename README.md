@@ -1,3 +1,3 @@
 Gestion Incidente formato estilo web para telefonos.
 
-![](https://user-images.githubusercontent.com/86979361/149607684-4343ab4b-4bd4-49cb-9a30-802d7a971702.jpg)
+![titulo-telecom2](https://user-images.githubusercontent.com/86979361/149607800-6dac8b36-c92c-494c-bb3f-8ac372a6b0ee.jpg)
