@@ -72,7 +72,7 @@ function loadPage() {
 
   if (localStorage.getItem('theme')) {
     if (localStorage.getItem('theme') === 'light') {
-      container.style.background = 'white'
+      container.style.background = 'linear-gradient(to bottom, #f1f0ff, #f1effe, #f1eefd, #f2edfc, #f2ecfb, #efe7fa, #ece2f8, #eaddf7, #e4d3f6, #ddc9f5, #d6bff4, #ceb5f3)'
     } else {
       container.style.background = '#2F2F2F'
     }
