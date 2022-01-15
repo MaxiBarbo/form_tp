@@ -75,6 +75,17 @@ html {
   position: fixed;
   margin-left: 85%; }
 
+.ir-arriba {
+  display: none;
+  background-repeat: no-repeat;
+  font-size: 20px;
+  color: blueviolet;
+  cursor: pointer;
+  position: fixed;
+  bottom: 25rem;
+  right: 2rem;
+  z-index: 2; }
+
 /*Globals*/
 body {
   display: flex;
@@ -162,7 +173,7 @@ h6 {
   display: flex;
   flex-direction: row;
   margin-right: 2rem;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   margin-bottom: 1rem; }
   .logotp .imgLogo {
     height: 2.5rem; }
@@ -297,17 +308,6 @@ h1:hover {
 .btn {
   margin-bottom: 2rem;
   margin-top: 1rem; }
-
-.ir-arriba {
-  display: none;
-  background-repeat: no-repeat;
-  font-size: 20px;
-  color: blueviolet;
-  cursor: pointer;
-  position: fixed;
-  bottom: 25rem;
-  right: 2rem;
-  z-index: 2; }
 
 .s1 {
   display: none;

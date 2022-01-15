@@ -47,3 +47,14 @@
   margin-left: 85%;
   
 }
+.ir-arriba{
+  display:none;
+  background-repeat:no-repeat;
+  font-size:20px;
+  color:blueviolet;
+  cursor:pointer;
+  position:fixed;
+  bottom:25rem;
+  right:2rem;
+  z-index:2;
+}
