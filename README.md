@@ -1,6 +1,6 @@
 Gestion Incidente formato estilo web para telefonos. 
 
-![image](https://user-images.githubusercontent.com/86979361/149609710-94740adc-c27e-49c2-ab38-1db1adbea13f.png)
+![image](https://user-images.githubusercontent.com/86979361/149609733-9402f187-2421-4b8b-8980-fa806667b9d5.png)
 
 Actualmente trabajo en la compañia Telecom Personal y al utilizar la app "gestion incidente", a modo de practica surge la idea de copiar el diseño original donde busco mejorar su navegabilidad responsive con medias Queries y podria ser util para utilzarlo en el navegador de los telefefonos moviles via web, siendo solo una maqueta
 
