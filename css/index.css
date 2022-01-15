@@ -448,6 +448,7 @@ h1:hover {
   .queries {
     justify-content: left; }
     .queries .checkTitulos {
+      justify-content: left;
       width: 60%; } }
 
 .headerVisitas {
