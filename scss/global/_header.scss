@@ -2,10 +2,11 @@
 .logotp{
     @include flex-mov(flex,row);
     margin-right: 2rem;
-    margin-top: 0.5rem;  
-    margin-bottom: 1rem; 
+    margin-top: 2.7rem;  
+     
     .imgLogo{
         height: 2.5rem;
+        margin-top: -1rem;
     }
     
 }

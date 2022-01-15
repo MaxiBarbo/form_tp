@@ -173,10 +173,10 @@ h6 {
   display: flex;
   flex-direction: row;
   margin-right: 2rem;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem; }
+  margin-top: 2.7rem; }
   .logotp .imgLogo {
-    height: 2.5rem; }
+    height: 2.5rem;
+    margin-top: -1rem; }
 
 #navText {
   letter-spacing: 1px;
