@@ -24,6 +24,13 @@ display: none;
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
-
+    .queries{
+    justify-content: left;
+        .checkTitulos{
+            width: 60%;
+            
+            
+        }           
+    }  
   
 }

@@ -157,6 +157,12 @@ h5 {
   margin-left: 1rem;
   letter-spacing: 2px; }
 
+.h5 {
+  color: #b350b3;
+  font-size: 1em;
+  letter-spacing: 1px;
+  margin-top: 3rem; }
+
 h6 {
   color: grey;
   margin-left: 1rem;
@@ -439,13 +445,20 @@ h1:hover {
     gap: 0.5rem; }
 
 /* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .queries {
+    justify-content: left; }
+    .queries .checkTitulos {
+      width: 60%; } }
+
 .headerVisitas {
   margin-top: 3rem;
   margin-left: 1rem;
   display: flex;
   flex-direction: row;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  display: none; }
 
 .headerBuscar {
   width: 60%;

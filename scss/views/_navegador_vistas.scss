@@ -5,6 +5,7 @@
     @include flex-mov(flex,row);
     display: flex;
     flex-wrap: wrap;
+    display: none;
 }
 .headerBuscar{
     width: 60%;
