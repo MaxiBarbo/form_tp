@@ -5,9 +5,13 @@ Gestion Incidente formato estilo web para telefonos.
 la idea principal de copiar el diseño original  fue para agregar navegabilidad responsive con medias Queries que podria ser util utilzarlo en el navegador de los telefefonos moviles via web y se agrega un poquito de diseño sumando cambio de Theme.
 En el proyecto se utiliza 
 
-![image](https://user-images.githubusercontent.com/86979361/149609094-e0dad1e8-bfc0-464b-83bb-baf94de81a7d.png)
-![image](https://user-images.githubusercontent.com/86979361/149609106-eb42118e-0378-44e1-ac8b-8c4972eeed5e.png)
-![image](https://user-images.githubusercontent.com/86979361/149609133-fc7d19cb-54f9-4166-b705-b6e4d7b0669a.png)
-![image](https://user-images.githubusercontent.com/86979361/149609160-289dc4f3-2f09-4ef8-9fb2-01b25f8a8c77.png)
+![image](https://user-images.githubusercontent.com/86979361/149609235-8e76b2cc-386e-4db7-852e-f58587313a55.png)
+![image](https://user-images.githubusercontent.com/86979361/149609254-37f72ed5-0df0-412a-8395-40a91f3e42d4.png)
+![image](https://user-images.githubusercontent.com/86979361/149609264-54470a97-45de-42a5-8906-edbbe04731eb.png)
+![image](https://user-images.githubusercontent.com/86979361/149609276-4de730d2-80bd-40e7-a6d2-b93afe12996f.png)
+
+
+
+
 
 
