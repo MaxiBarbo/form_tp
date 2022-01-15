@@ -13,6 +13,7 @@ En el proyecto se utiliza
 
 
 
+![image](https://user-images.githubusercontent.com/86979361/149621645-7f8e1976-72cf-4d9b-a260-1cb68f550e2f.png)
 
 
 
