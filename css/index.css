@@ -1,6 +1,4 @@
 /*Utils*/
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kalam:wght@300&display=swap");
 *,
 *::before,
 *::after {
@@ -132,7 +130,7 @@ h1 {
 
 h2 {
   font-size: 1.2em;
-  color: blueviolet; }
+  color: #6369D1; }
 
 h3 {
   color: grey; }
@@ -201,14 +199,11 @@ h6 {
   height: 2.1rem; }
 
 /* Mobile Styles */
-/*Tipos Letras */
-/*Size Titulos*/
-/*Size texto*/
-/*Colores */
-/*Bordes*/
-/*Sadows*/
-/*Trasnsparencias*/
 /*Html Views*/
+.blockBajas {
+  display: flex;
+  flex-direction: row; }
+
 .h1 {
   font-size: 1.5em;
   width: 100%;
@@ -229,7 +224,7 @@ h1:hover {
   .blocksEhs .spanTwo {
     color: grey;
     letter-spacing: 1px;
-    font: 900; }
+    font-weight: bold; }
 
 .blockThree, .blockTwo, .blockOne, .blockFour {
   display: flex;
