@@ -17,6 +17,11 @@
         
     }
 }
+.bttngrupouno{
+    @include flex-mov(flex,column);
+    width: 15%;
+    margin: 0;
+}
 .optionObserSeg{
     margin-bottom: 3rem;
     width: 30rem;
@@ -98,6 +103,11 @@
 }
 
 .spanOne{
+    font-size: 1em;
+}
+#asterisco{
+    color: red;
+    font-weight: bold;
     font-size: 1em;
 }
 /* Mobile Styles */

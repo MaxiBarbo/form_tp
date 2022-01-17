@@ -185,7 +185,8 @@ h6 {
 #navText {
   letter-spacing: 1px;
   font-size: 1.5em;
-  color: #1e6cfd; }
+  color: #1e6cfd;
+  font-weight: 500; }
 
 .iconosLogin {
   display: flex;
@@ -262,6 +263,12 @@ h1:hover {
     justify-content: left;
     gap: 3rem; }
 
+.bttngrupouno {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  margin: 0; }
+
 .optionObserSeg {
   margin-bottom: 3rem;
   width: 30rem;
@@ -330,6 +337,11 @@ h1:hover {
   margin-top: 1rem; }
 
 .spanOne {
+  font-size: 1em; }
+
+#asterisco {
+  color: red;
+  font-weight: bold;
   font-size: 1em; }
 
 /* Mobile Styles */

@@ -1,6 +1,37 @@
 $(function(){
 
-  
+    // Funciones mara mostrar / ocultar Bolques entrada de datos
+    
+    $("#mostrarOne").click(function () {	 
+        $('.s1').toggle("slow");
+
+    });
+
+    $("#mostrarTwo").click(function () {	 
+        $('.s2').toggle("slow");
+
+    });
+
+    $("#mostrarThree").click(function () {	 
+        $('.dataTimeOne').toggle("slow");
+
+    });
+
+    $("#mostrarFour").click(function () {	 
+        $('.observacion').toggle("slow");
+
+    });
+
+    $("#mostrarFive").click(function () {	 
+        $('.riesgo').toggle("slow");
+
+    });
+
+    $("#mostrarManual").click(function () {	 
+        $('.blocks').toggle("slow");
+
+    });
+
 
     $("#mostrarFiltros").click(function () {	 
         $('.inputsBlock').toggle("slow");
@@ -57,6 +88,7 @@ $(function(){
         $('.bandeja').toggle("slow");
 
     });
+
 
 
 
