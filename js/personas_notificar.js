@@ -1,4 +1,4 @@
-
+// clase para ingresar persona supervisada
 class EntradaTwo{
     constructor(nombre,unidad,direccion,mail,apellidos,empresa,telefono,dni){
         this.nombre = nombre;

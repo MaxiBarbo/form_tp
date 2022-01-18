@@ -9,17 +9,16 @@
 }
 .observacion{
     display: none;
-    // width: 50%;
+    
     .bttn1{
         display: flex;
         justify-content:left;
         gap:3rem;
-        
     }
 }
 .bttngrupouno{
     @include flex-mov(flex,column);
-    width: 15%;
+    width: 50%;
     margin: 0;
 }
 .optionObserSeg{

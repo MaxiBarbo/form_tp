@@ -266,7 +266,7 @@ h1:hover {
 .bttngrupouno {
   display: flex;
   flex-direction: column;
-  width: 15%;
+  width: 50%;
   margin: 0; }
 
 .optionObserSeg {
