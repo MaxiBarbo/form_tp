@@ -116,17 +116,19 @@
     }
     .dataTimeOne{
         width: 100%;
+        .input-group{
+        width: 60%;
+        }
     }
-    .s1{
-     .mb-3{
-        width: 100%;
+    .s2{
+    width: 100%;
+        .mb-3{
+        width: 60%;
+        }
     }
-    #s2{
-        width: 100%;
-    }
- }
+    
  
-}                     
+}                   
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
     
@@ -134,5 +136,4 @@
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
     
-
-}
+} 

@@ -54,7 +54,7 @@ function changeTheme() {
 
     // color h1
     for (let i = 0; i < hone.length; i++) {
-      hone[i].style.color = "white"
+      hone[i].style.color = "whitesmoke"
       localStorage.setItem('h1', 'dark') 
     } 
 
@@ -128,7 +128,7 @@ if (localStorage.getItem('h1')) {
 
       for (let i = 0; i < hone.length; i++) {
 
-        hone[i].style.color = 'white'
+        hone[i].style.color = 'whitesmoke'
   }
     } 
   

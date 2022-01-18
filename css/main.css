@@ -89,7 +89,6 @@ body {
   display: flex;
   flex-direction: column;
   /* background-image: url("../Multimedia/Png.jfif"); */
-  background-color: #8D98A7;
   width: auto;
   height: 300vh; }
 
@@ -350,10 +349,12 @@ h1:hover {
     width: 30rem; }
   .dataTimeOne {
     width: 100%; }
-  .s1 .mb-3 {
+    .dataTimeOne .input-group {
+      width: 60%; }
+  .s2 {
     width: 100%; }
-  .s1 #s2 {
-    width: 100%; } }
+    .s2 .mb-3 {
+      width: 60%; } }
 
 /* Tablet Styles */
 /* Desktop Styles */
