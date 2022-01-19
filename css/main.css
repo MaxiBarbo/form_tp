@@ -113,7 +113,7 @@ input {
   text-align: left; }
 
 h1 {
-  color: #4d1086;
+  color: gray;
   text-align: center;
   padding: 5px;
   font-size: 1.5em;
@@ -265,8 +265,7 @@ h1:hover {
 .bttngrupouno {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  margin: 0; }
+  width: 10%; }
 
 .optionObserSeg {
   margin-bottom: 3rem;
@@ -292,7 +291,6 @@ h1:hover {
   letter-spacing: 2px; }
 
 .blocks {
-  display: none;
   display: flex;
   flex-direction: row;
   margin-top: 1rem;
@@ -306,11 +304,10 @@ h1:hover {
     height: 18rem;
     width: 25rem;
     margin: 0rem; }
-  .blocks .inputsThree,
-  .blocks .inputsFour {
-    display: none;
-    padding: 1rem;
-    margin: 1rem; }
+
+.agregarInspeccion .inputsThree {
+  width: 30%;
+  padding: 1.5rem; }
 
 .btn {
   margin-bottom: 2rem;
@@ -354,7 +351,11 @@ h1:hover {
   .s2 {
     width: 100%; }
     .s2 .mb-3 {
-      width: 60%; } }
+      width: 60%; }
+  .bttngrupouno {
+    width: 30%; }
+  .agregarInspeccion .inputsThree {
+    width: 70%; } }
 
 /* Tablet Styles */
 /* Desktop Styles */

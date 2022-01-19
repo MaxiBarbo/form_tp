@@ -45,9 +45,6 @@
   </header>
     <main class="container">
 
-      <!-- <div class="goTop">
-        <span onclick="toTop()" class="iconify" data-icon="majesticons:chevron-double-up" data-width="50" data-height="50"></span>
-      </div> -->
     <!-- Boton hacia arriba -->
           <div>
             <a class="ir-arriba"  javascript:void(0) title="Volver arriba">
@@ -136,8 +133,8 @@
         <div class="bttn1">
           <button type="button" id="b1" class="btn btn-outline-primary btn-sm">Seleccione a mi</button>
           <button type="button" id ="b2"class="btn btn-outline-primary btn-sm">Libreta Dir</button>
-          <button id="mostrarManual" type="" name="bttnM" class="btn btn-outline-primary btn-sm">Indicar Manualmente</button>
-          <button type="button" id="borrarPersona" class="btn btn-outline-secondary btn-sm">Borrar</button>
+          <button id="mostrarManual" type="button" name="bttnM" class="btn btn-outline-primary btn-sm">Indicar Manualmente</button>
+          <button type="button" id="" class="btn btn-outline-secondary btn-sm" onclick='deleteUser()'>Borrar LocalS</button>
         </div>
 
       <div class="blocks">
@@ -175,21 +172,22 @@
         <div class="mb-3">
           <input type="text" name="eblockeight" class="form-control" placeholder="DNI *" aria-label="" aria-describedby="">
         </div>      
-      </section>
+      </section>    
 
-      
+    </div>  
+
+    <div class="agregarInspeccion">
       <section class="inputsThree">
       </section>
 
-      <section class="inputsFour">
-      </section>
-    
-    </div>  
+    </div>
+
   </form> 
+  <button id="agregarPersona" type="button" class="btn btn-outline-primary">Añadir Otra persona supervisada</button>
+
         <div class="bttngrupouno">
-          <button id="agregarPersona" type="button" class="btn btn-outline-primary">Añadir Otra persona supervisada</button>
-          <button type="submit" id="" class="btn btn-outline-primary btn-sm">Enviar</button>
-          <button type="button" class="btn btn-outline-secondary"onclick='deleteUser()'>Clear</button>
+          <button type="submit" id="" class="btn btn-outline-primary btn-sm">Enviar Datos</button>
+          <button type="reset" class="btn btn-outline-secondary">Limpiar Datos</button>
         </div>
 
         <div class="mb-3 s2">

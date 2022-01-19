@@ -1,15 +1,14 @@
 
-
 .dataTimeOne{
     display: flex;
     flex-direction: column;
     width: 50%;
     display: none;
-    
+   
 }
+
 .observacion{
     display: none;
-    
     .bttn1{
         display: flex;
         justify-content:left;
@@ -18,8 +17,7 @@
 }
 .bttngrupouno{
     @include flex-mov(flex,column);
-    width: 50%;
-    margin: 0;
+    width: 10%;   
 }
 .optionObserSeg{
     margin-bottom: 3rem;
@@ -46,8 +44,8 @@
     text-transform: uppercase;
     letter-spacing: 2px;  
 }
-.blocks{
-    display: none;
+
+.blocks{   
     display: flex;
     flex-direction: row;
     margin-top: 1rem;
@@ -56,40 +54,35 @@
     
     .inputsOne,
     .inputsTwo{
-        
         border-left: 1px solid blueviolet;
         border-bottom: 1px solid blueviolet;
         padding: 1.5rem;
         @include cajas-iframe(25rem,18rem,0rem)
-    } 
-    .inputsThree,
-    .inputsFour{
-        display: none;
-        padding: 1rem;
-        margin:1rem;
-        
-        
-        
-    }  
+    }     
+}
+
+.agregarInspeccion{
+    
+    .inputsThree{
+        width: 30%;
+        padding: 1.5rem;  
+    }    
 }
 .btn{
     margin-bottom: 2rem;
     margin-top: 1rem;
 }
-
 .s1 {
     display: none;
     -webkit-transition: opacity 1000ms linear;
     transition: opacity 1000ms linear;
-
     .l1{
         width: 50%;
     }
 }
 .s2{
     display: none;
-    width: 50%;  
-                 
+    width: 50%;                  
 } 
 .init{
     opacity: 1;
@@ -97,10 +90,8 @@
 }
 .input-group{
     width: 50%;
-    margin-top: 1rem;
-    
+    margin-top: 1rem;   
 }
-
 .spanOne{
     font-size: 1em;
 }
@@ -109,6 +100,7 @@
     font-weight: bold;
     font-size: 1em;
 }
+
 /* Mobile Styles */
 @media only screen and (max-width: 400px) { 
     #borderSep{
@@ -126,13 +118,23 @@
         width: 60%;
         }
     }
-    
- 
-}                   
+
+.bttngrupouno{
+        width: 30%;    
+} 
+
+.agregarInspeccion{
+    .inputsThree{
+        width: 70%;   
+    }  
+  }
+}   
+
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
     
-}               
+}    
+
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
     
