@@ -67,9 +67,9 @@
 
             <h1 id="mostrarOne">Que ha sucedido?</h1>
 
-      <form id="formOne">    
-        <div class="s1"> 
+    <form id="formOne" method="POST">    
 
+        <div class="s1"> 
             <div class="mb-3 l1">
               <label for="exampleFormControlInput1" class="form-label">Titulo <span id="asterisco">*</span></label>
               <input type="text"  class="form-control" id="" placeholder="" name="eone">
@@ -106,87 +106,88 @@
 
               <h1 id="mostrarTwo">Donde ha sucedido?</h1>
           
-          <div class="s2"> 
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Ubicacion<span id="asterisco">*</span></label>
-              <div>
-                <input  type="text" name="efive" class="form-control" id="" placeholder="Detalles">
+            <div class="s2"> 
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Ubicacion<span id="asterisco">*</span></label>
+                <div>
+                  <input  type="text" name="efive" class="form-control" id="" placeholder="Detalles">
+                </div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Descripcion del Lugar</label>
+                  <textarea class="form-control" name="esix" id="" rows="5"></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Calle/Numero:<span id="asterisco">*</span></label>
+                  <input type="text" class="form-control" name="eseven" id="" placeholder="">
+                </div>
+            
+              <div id="borderSep"></div>
+
+            </div> 
+
+                <h1 id="mostrarFour">Quien Fue el suj.observacion</h1>
+            
+            <div class="observacion">
+            <div class="bttn1">
+              <button type="button" id="b1" class="btn btn-outline-primary btn-sm">Seleccione a mi</button>
+              <button type="button" id ="b2"class="btn btn-outline-primary btn-sm">Libreta Dir</button>
+              <button id="mostrarManual" type="button" name="bttnM" class="btn btn-outline-primary btn-sm">Indicar Manualmente</button>
+              <button type="button" id="" class="btn btn-outline-secondary btn-sm" onclick='deleteUser()'>Borrar LocalS</button>
             </div>
+
+            <div class="blocks">
+            
+            <section class="inputsOne">
+
+            <div class="mb-3">
+              <input type="text" name="eblockone" class="form-control" placeholder="Nombre de Pila *" aria-label="" aria-describedby="">
+              
+            </div>
+
+            <div class="mb-3">
+              <input type="text" name="eblocktwo" class="form-control" placeholder="Unidad Organizativa *" aria-label="" aria-describedby="">
+
             </div>
             <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">Descripcion del Lugar</label>
-              <textarea class="form-control" name="esix" id="" rows="5"></textarea>
+              <input type="text" name="eblockthree" class="form-control" placeholder="Direccion *" aria-label="" aria-describedby="">
+
             </div>
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Calle/Numero:<span id="asterisco">*</span></label>
-              <input type="text" class="form-control" name="eseven" id="" placeholder="">
+              <input type="text" name="eblockfour" class="form-control" placeholder="Mail" aria-label="" aria-describedby="">
             </div>
-           
-        
+          </section>
 
-          <div id="borderSep"></div>
-        </div> 
+          <section class="inputsTwo">
+            <div class="mb-3">
+              <input type="text" name="eblockfive" class="form-control" placeholder="Apellidos *" aria-label="" aria-describedby="">
+            </div>
+            <div class="mb-3">
+              <input type="text" name="eblocksix" class="form-control" placeholder="Empresa *" aria-label="" aria-describedby="">
+            </div>
+            <div class="mb-3">
+              <input type="text" name="eblockseven" class="form-control" placeholder="Telefono *" aria-label="" aria-describedby="">
+            </div>
+            <div class="mb-3">
+              <input type="text" name="eblockeight" class="form-control" placeholder="DNI *" aria-label="" aria-describedby="">
+            </div>      
+          </section>    
 
-            <h1 id="mostrarFour">Quien Fue el suj.observacion</h1>
-         
-        <div class="observacion">
-        <div class="bttn1">
-          <button type="button" id="b1" class="btn btn-outline-primary btn-sm">Seleccione a mi</button>
-          <button type="button" id ="b2"class="btn btn-outline-primary btn-sm">Libreta Dir</button>
-          <button id="mostrarManual" type="button" name="bttnM" class="btn btn-outline-primary btn-sm">Indicar Manualmente</button>
-          <button type="button" id="" class="btn btn-outline-secondary btn-sm" onclick='deleteUser()'>Borrar LocalS</button>
-        </div>
+        </div>  
 
-      <div class="blocks">
-        
-        <section class="inputsOne">
-
-        <div class="mb-3">
-          <input type="text" name="eblockone" class="form-control" placeholder="Nombre de Pila *" aria-label="" aria-describedby="">
-          
-        </div>
-
-        <div class="mb-3">
-          <input type="text" name="eblocktwo" class="form-control" placeholder="Unidad Organizativa *" aria-label="" aria-describedby="">
+        <div class="agregarInspeccion">
+          <section class="inputsThree">
+          </section>
 
         </div>
-        <div class="mb-3">
-          <input type="text" name="eblockthree" class="form-control" placeholder="Direccion *" aria-label="" aria-describedby="">
 
-        </div>
-        <div class="mb-3">
-          <input type="text" name="eblockfour" class="form-control" placeholder="Mail" aria-label="" aria-describedby="">
-        </div>
-       </section>
+    </form> 
 
-       <section class="inputsTwo">
-        <div class="mb-3">
-          <input type="text" name="eblockfive" class="form-control" placeholder="Apellidos *" aria-label="" aria-describedby="">
-        </div>
-        <div class="mb-3">
-          <input type="text" name="eblocksix" class="form-control" placeholder="Empresa *" aria-label="" aria-describedby="">
-        </div>
-        <div class="mb-3">
-          <input type="text" name="eblockseven" class="form-control" placeholder="Telefono *" aria-label="" aria-describedby="">
-        </div>
-        <div class="mb-3">
-          <input type="text" name="eblockeight" class="form-control" placeholder="DNI *" aria-label="" aria-describedby="">
-        </div>      
-      </section>    
-
-    </div>  
-
-    <div class="agregarInspeccion">
-      <section class="inputsThree">
-      </section>
-
-    </div>
-
-  </form> 
   <button id="agregarPersona" type="button" class="btn btn-outline-primary">Añadir Otra persona supervisada</button>
 
         <div class="bttngrupouno">
-          <button type="submit" id="" class="btn btn-outline-primary btn-sm">Enviar Datos</button>
+          
+          <button type="submit" id="datosNotificar" class="btn btn-outline-primary btn-sm">Enviar Datos</button>
           <button type="reset" class="btn btn-outline-secondary">Limpiar Datos</button>
         </div>
 
@@ -219,7 +220,7 @@
     <script src="../js/notificar.js"></script>
     <script src="../js/globales.js"></script>
     <script src="../js/btn_onTop.js"></script>
-    <script src="../js/activos_fijos.js"></script>
+    <script src="../js/mostrar.js"></script>
     <script src="../js/entrada_obs.js"></script>
     <script src="../js/personas_notificar.js"></script>
 

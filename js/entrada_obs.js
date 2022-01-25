@@ -1,6 +1,6 @@
 
 //Cramos clase constructor para agrupar datos
-//Bloque datos "que a sucedido"
+//Bloque datos "que a sucedido" en notificar.html
 
 class EntradaUno{
     constructor(titulo,fecha,horario,ubicacion,calle){
@@ -50,7 +50,7 @@ $("#formOne").submit(function(event){
             datosObservacion.push(new EntradaUno(titulo,fecha,horario,ubicacion,calle));
             guardar_user(datosObservacion);
 
-            datoSujeto.push(new EntradaTwo(nombre,unidad,direccion,mail,apellidos,empresa,telefono,dni));
+            datoSujeto.push(new EntradaDos(nombre,unidad,direccion,mail,apellidos,empresa,telefono,dni));
             guardar_user(datoSujeto);
 
             }
@@ -101,7 +101,50 @@ function confirmar_datos(titulo,fecha,ubicacion,calle,nombre,direccion,apellido,
 }
     else {
 
-        check = "Favor de ingresar todos los datos con *"
+        check = "Favor de ingresar todos los datos con * :("
         }
             return check;
     }
+
+const URLGET = "https://jsonplaceholder.typicode.com/posts"
+
+//Declaramos la información a enviar
+const infoPost =  { titulo: datosObservacion, profesion: "Programadora"}
+//Agregamos un botón con jQuery
+
+//Escuchamos el evento click del botón agregado
+$("#datosNotificar").click(() => { 
+    $.post(URLGET, infoPost ,(respuesta, estado) => {
+      console.log(respuesta);
+        if(estado === "success"){
+            $("body").prepend(`<div>
+Guardado:${respuesta.titulo}
+</div>`);
+        }  
+    });
+});
+
+
+
+//Declaramos la url del archivo JSON local
+const URLJSON = "../json/json_local.json"
+//Agregamos un botón con jQuery
+$("body").prepend('<button id="btn3">JSON</button>');
+//Escuchamos el evento click del botón agregado
+$("#btn3").click(() => { 
+$.getJSON(URLJSON, function (respuesta, estado) {
+    if(estado === "success"){
+        let misDatos = respuesta;
+        for (const dato of misDatos) {
+          $("body").prepend(`<div>
+                               <h3>${dato.title}</h3>
+                               <p> ${dato.id}</p>
+                              </div>`);
+        }  
+      }else{
+        console.log(respuesta)
+    }
+
+
+    }); 
+});      

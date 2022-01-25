@@ -22,7 +22,6 @@ $(function(){
   $(document).on('click', '.remover', function(){
     $(this).parents('.idatos').remove();
     
-
   })
 });
 

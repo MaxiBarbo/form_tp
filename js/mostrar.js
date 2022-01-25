@@ -1,6 +1,6 @@
 $(function(){
 
-    // Funciones mara mostrar / ocultar Bolques entrada de datos
+    // Funciones para mostrar / ocultar Bolques entrada de datos
     
     $("#mostrarOne").click(function () {	 
         $('.s1').toggle("slow");
