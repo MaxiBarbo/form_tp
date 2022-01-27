@@ -5,8 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-sass": "node-sass --include-path scss scss/main.scss css/main.css",
-    "watch-sass": "nodemon -e scss -x \"npm run build-sass\"",
-    "dev": "nodemon src/index.js"
+    "watch-sass": "nodemon -e scss -x \"npm run build-sass\""
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +16,7 @@
   "description": "",
   "dependencies": {
     "express": "^4.17.2",
+    "jsonfile": "^6.1.0",
     "lowdb": "^3.0.0",
     "morgan": "^1.10.0",
     "node-fetch": "^3.1.1"

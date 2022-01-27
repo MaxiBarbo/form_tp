@@ -48,13 +48,13 @@ function changeTheme() {
 
     // color label
     for (let i = 0; i < label.length; i++) {
-      label[i].style.color = "whitesmoke"
+      label[i].style.color = "#F9EDCC"
       localStorage.setItem('label', 'dark') 
     } 
 
     // color h1
     for (let i = 0; i < hone.length; i++) {
-      hone[i].style.color = "whitesmoke"
+      hone[i].style.color = "#808782"
       localStorage.setItem('h1', 'dark') 
     } 
 
@@ -107,7 +107,7 @@ if (localStorage.getItem('label')) {
 
       for (let i = 0; i < label.length; i++) {
 
-        label[i].style.color = 'whitesmoke'
+        label[i].style.color = '#F9EDCC'
   }
     } 
   
@@ -128,7 +128,7 @@ if (localStorage.getItem('h1')) {
 
       for (let i = 0; i < hone.length; i++) {
 
-        hone[i].style.color = 'whitesmoke'
+        hone[i].style.color = '#808782'
   }
     } 
   

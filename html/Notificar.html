@@ -65,14 +65,14 @@
           </select>
         </div>
 
-            <h1 id="mostrarOne">Que ha sucedido?</h1>
+            <h1 id="mostrarOne">Que ha sucedido?<span id="adown" class="iconify" data-icon="eva:arrow-ios-downward-fill" data-width="20" data-height="20"></span></h1>
 
     <form id="formOne" method="POST">    
 
         <div class="s1"> 
             <div class="mb-3 l1">
               <label for="exampleFormControlInput1" class="form-label">Titulo <span id="asterisco">*</span></label>
-              <input type="text"  class="form-control" id="" placeholder="" name="eone">
+              <input type="text"  class="form-control" id="" placeholder="" name="titulo">
             </div>
 
             <div class="mb-3 l1">
@@ -84,17 +84,17 @@
 
             </div> 
           
-              <h1 id="mostrarThree" >Cuando ha Pasado?</h1>
+              <h1 id="mostrarThree" >Cuando ha Pasado?<span id="adown" class="iconify" data-icon="eva:arrow-ios-downward-fill" data-width="20" data-height="20"></span></h1>
             
             <div  class="dataTimeOne">
                 <div class="input-group">
                     <span class="input-group-text" id="inputGroup-sizing">Fecha<span id="asterisco">*</span></span>
-                    <input type="date" name="ethree" class="form-control" aria-label="" >
+                    <input type="date" name="fecha" class="form-control" aria-label="" >
                 </div>
 
               <div class="input-group">
                   <span class="input-group-text" id="inputGroup-sizing">Horario</span>
-                  <input type="time" name="efour" class="form-control" aria-label="">
+                  <input type="time" name="horario" class="form-control" aria-label="">
               </div>
               
               <div class="input-group">
@@ -104,29 +104,29 @@
             <div id="borderSep"></div>
           </div>
 
-              <h1 id="mostrarTwo">Donde ha sucedido?</h1>
+              <h1 id="mostrarTwo">Donde ha sucedido?<span id="adown" class="iconify" data-icon="eva:arrow-ios-downward-fill" data-width="20" data-height="20"></span></h1>
           
             <div class="s2"> 
                 <div class="mb-3">
                   <label for="exampleFormControlInput1" class="form-label">Ubicacion<span id="asterisco">*</span></label>
                 <div>
-                  <input  type="text" name="efive" class="form-control" id="" placeholder="Detalles">
+                  <input  type="text" name="ubicacion" class="form-control" id="" placeholder="Detalles">
                 </div>
                 </div>
                 <div class="mb-3">
                   <label for="exampleFormControlTextarea1" class="form-label">Descripcion del Lugar</label>
-                  <textarea class="form-control" name="esix" id="" rows="5"></textarea>
+                  <textarea class="form-control" name="" id="" rows="5"></textarea>
                 </div>
                 <div class="mb-3">
                   <label for="exampleFormControlInput1" class="form-label">Calle/Numero:<span id="asterisco">*</span></label>
-                  <input type="text" class="form-control" name="eseven" id="" placeholder="">
+                  <input type="text" class="form-control" name="calle" id="" placeholder="">
                 </div>
             
               <div id="borderSep"></div>
 
             </div> 
 
-                <h1 id="mostrarFour">Quien Fue el suj.observacion</h1>
+                <h1 id="mostrarFour">Quien Fue el suj.observacion?<span id="adown" class="iconify" data-icon="eva:arrow-ios-downward-fill" data-width="20" data-height="20"></span></h1>
             
             <div class="observacion">
             <div class="bttn1">
@@ -141,35 +141,35 @@
             <section class="inputsOne">
 
             <div class="mb-3">
-              <input type="text" name="eblockone" class="form-control" placeholder="Nombre de Pila *" aria-label="" aria-describedby="">
+              <input type="text" name="nombre" class="form-control" placeholder="Nombre de Pila *" aria-label="" aria-describedby="">
               
             </div>
 
             <div class="mb-3">
-              <input type="text" name="eblocktwo" class="form-control" placeholder="Unidad Organizativa *" aria-label="" aria-describedby="">
+              <input type="text" name="unidad" class="form-control" placeholder="Unidad Organizativa *" aria-label="" aria-describedby="">
 
             </div>
             <div class="mb-3">
-              <input type="text" name="eblockthree" class="form-control" placeholder="Direccion *" aria-label="" aria-describedby="">
+              <input type="text" name="direccion" class="form-control" placeholder="Direccion *" aria-label="" aria-describedby="">
 
             </div>
             <div class="mb-3">
-              <input type="text" name="eblockfour" class="form-control" placeholder="Mail" aria-label="" aria-describedby="">
+              <input type="text" name="mail" class="form-control" placeholder="Mail" aria-label="" aria-describedby="">
             </div>
           </section>
 
           <section class="inputsTwo">
             <div class="mb-3">
-              <input type="text" name="eblockfive" class="form-control" placeholder="Apellidos *" aria-label="" aria-describedby="">
+              <input type="text" name="apellidos" class="form-control" placeholder="Apellidos *" aria-label="" aria-describedby="">
             </div>
             <div class="mb-3">
-              <input type="text" name="eblocksix" class="form-control" placeholder="Empresa *" aria-label="" aria-describedby="">
+              <input type="text" name="empresa" class="form-control" placeholder="Empresa *" aria-label="" aria-describedby="">
             </div>
             <div class="mb-3">
-              <input type="text" name="eblockseven" class="form-control" placeholder="Telefono *" aria-label="" aria-describedby="">
+              <input type="text" name="telefono" class="form-control" placeholder="Telefono *" aria-label="" aria-describedby="">
             </div>
             <div class="mb-3">
-              <input type="text" name="eblockeight" class="form-control" placeholder="DNI *" aria-label="" aria-describedby="">
+              <input type="text" name="dni" class="form-control" placeholder="DNI *" aria-label="" aria-describedby="">
             </div>      
           </section>    
 
@@ -198,7 +198,7 @@
         <div id="borderSep"></div>
   </div>
 
-    <h1 id="mostrarFive" class="h1">Cual es riesgo de que estas circunstancias causen una lesion o un accidente en el futuro?</h1>
+    <h1 id="mostrarFive" class="h1">Cual es riesgo de que estas circunstancias causen una lesion o un accidente en el futuro?<span id="adown" class="iconify" data-icon="eva:arrow-ios-downward-fill" data-width="20" data-height="20"></span></h1>
 
       <div class="riesgo">
         <select class="form-select" aria-label="Default select example">

@@ -1,25 +1,9 @@
 
-//Cramos clase constructor para agrupar datos
-//Bloque datos "que a sucedido" en notificar.html
-
-class EntradaUno{
-    constructor(titulo,fecha,horario,ubicacion,calle){
-        this.titulo = titulo;
-        this.fecha = fecha;
-        this.horario = horario;
-        this.ubicacion = ubicacion;
-        this.calle = calle;
-
-    }
-}
 // clave almacenada en const
 const clave_localStorage = "dataArr"
-const clave_localStorageTwo = "dataArrTwo"
 
 let datosObservacion = [];
-let datoSujeto = [];
 
-console.log(datoSujeto);
 console.log(datosObservacion);
 
 
@@ -27,31 +11,28 @@ $("#formOne").submit(function(event){
     event.preventDefault();
 
 // inputs notificar.html -     
-    titulo = $(this).find('input[name="eone"]').val();
-    fecha = $(this).find('input[name="ethree"]').val();
-    horario = $(this).find('input[name="efour"]').val();
-    ubicacion = $(this).find('input[name="efive"]').val();
-    calle = $(this).find('input[name="eseven"]').val();
+    titulo = $(this).find('input[name="titulo"]').val();
+    fecha = $(this).find('input[name="fecha"]').val();
+    horario = $(this).find('input[name="horario"]').val();
+    ubicacion = $(this).find('input[name="ubicacion"]').val();
+    calle = $(this).find('input[name="calle"]').val();
 
 // inputs notificar.html - sujeto observacion
-    nombre = $(this).find('input[name="eblockone"]').val();
-    unidad = $(this).find('input[name="eblocktwo"]').val();
-    direccion = $(this).find('input[name="eblockthree"]').val();
-    mail = $(this).find('input[name="eblockfour"]').val();
-    apellidos = $(this).find('input[name="eblockfive"]').val();
-    empresa = $(this).find('input[name="eblocksix"]').val();
-    telefono = $(this).find('input[name="eblockseven"]').val();
-    dni = $(this).find('input[name="eblockeight"]').val();
+    nombre = $(this).find('input[name="nombre"]').val();
+    unidad = $(this).find('input[name="unidad"]').val();
+    direccion = $(this).find('input[name="direccion"]').val();
+    mail = $(this).find('input[name="mail"]').val();
+    apellidos = $(this).find('input[name="apellidos"]').val();
+    empresa = $(this).find('input[name="empresa"]').val();
+    telefono = $(this).find('input[name="telefono"]').val();
+    dni = $(this).find('input[name="dni"]').val();
 
     let ingresok = confirmar_datos(titulo,fecha,ubicacion,calle,nombre,direccion,apellidos,empresa,telefono,dni);
 
         if (ingresok === ""){
 
-            datosObservacion.push(new EntradaUno(titulo,fecha,horario,ubicacion,calle));
+            datosObservacion.push(new EntradaUno(titulo,fecha,horario,ubicacion,calle,nombre,unidad,direccion,mail,apellidos,empresa,telefono,dni));
             guardar_user(datosObservacion);
-
-            datoSujeto.push(new EntradaDos(nombre,unidad,direccion,mail,apellidos,empresa,telefono,dni));
-            guardar_user(datoSujeto);
 
             }
 
@@ -71,7 +52,8 @@ function deleteUser() {
 
 function guardar_user(datosObservacion){
 
-    let dato = localStorage.getItem(clave_localStorage)
+    let dato = localStorage.getItem(clave_localStorage);
+
         if (dato){
 
             let dato_guardado = JSON.parse(localStorage.getItem(clave_localStorage));
@@ -84,6 +66,7 @@ function guardar_user(datosObservacion){
 
             let dato_guardado = new Array();
                 dato_guardado.push(datosObservacion)
+
             let dato_string = JSON.stringify(dato_guardado);
                 localStorage.setItem(clave_localStorage,dato_string);    
     }
@@ -109,11 +92,12 @@ function confirmar_datos(titulo,fecha,ubicacion,calle,nombre,direccion,apellido,
 const URLGET = "https://jsonplaceholder.typicode.com/posts"
 
 //Declaramos la información a enviar
-const infoPost =  { titulo: datosObservacion, profesion: "Programadora"}
+const infoPost =  { titulo: "hola", ubicacion: "ubicacion"}
 //Agregamos un botón con jQuery
 
 //Escuchamos el evento click del botón agregado
 $("#datosNotificar").click(() => { 
+     
     $.post(URLGET, infoPost ,(respuesta, estado) => {
       console.log(respuesta);
         if(estado === "success"){
@@ -129,7 +113,9 @@ Guardado:${respuesta.titulo}
 //Declaramos la url del archivo JSON local
 const URLJSON = "../json/json_local.json"
 //Agregamos un botón con jQuery
-$("body").prepend('<button id="btn3">JSON</button>');
+
+// $("body").prepend('<button id="btn3">JSON</button>');
+
 //Escuchamos el evento click del botón agregado
 $("#btn3").click(() => { 
 $.getJSON(URLJSON, function (respuesta, estado) {

@@ -1,8 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    /* background-image: url("../Multimedia/Png.jfif"); */
-    
+    background-color: linear-gradient(to bottom, #f1f0ff, #f1effe, #f1eefd, #f2edfc, #f2ecfb, #efe7fa, #ece2f8, #eaddf7, #e4d3f6, #ddc9f5, #d6bff4, #ceb5f3);
     width: auto;
     height: 300vh;
 }
@@ -14,7 +13,6 @@ body {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-
 .iconify{
     color: black;
 }
@@ -100,6 +98,9 @@ h6{
 .form-control{
     border-radius: 0.5rem;
     
+}
+#adown{
+    margin-left: 1rem;
 }
 
 /* Mobile Styles */
