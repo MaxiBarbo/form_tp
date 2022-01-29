@@ -193,9 +193,15 @@ h6 {
 .iconosLogin {
   display: flex;
   flex-direction: row;
-  margin-top: 2rem;
+  align-items: center;
   gap: 3rem;
   margin-right: 1rem; }
+
+.l3 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 0.5rem; }
 
 #imgtp {
   margin-top: 1rem;

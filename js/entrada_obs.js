@@ -6,7 +6,6 @@ let datosObservacion = [];
 
 console.log(datosObservacion);
 
-
 $("#formOne").submit(function(event){
     event.preventDefault();
 
@@ -16,7 +15,6 @@ $("#formOne").submit(function(event){
     horario = $(this).find('input[name="horario"]').val();
     ubicacion = $(this).find('input[name="ubicacion"]').val();
     calle = $(this).find('input[name="calle"]').val();
-
 // inputs notificar.html - sujeto observacion
     nombre = $(this).find('input[name="nombre"]').val();
     unidad = $(this).find('input[name="unidad"]').val();
@@ -34,9 +32,7 @@ $("#formOne").submit(function(event){
             datosObservacion.push(new EntradaUno(titulo,fecha,horario,ubicacion,calle,nombre,unidad,direccion,mail,apellidos,empresa,telefono,dni));
             guardar_user(datosObservacion);
 
-            }
-
-        else{
+        }else{
         
             alert("Favor Ingresa todos los datos con *")
         }

@@ -39,7 +39,45 @@
       </div>
       <div class="iconosLogin">
         <span class="iconify" data-icon="akar-icons:bell" data-width="30" data-height="30"></span>
-        <span class="iconify" data-icon="carbon:user-avatar-filled-alt" data-width="30" data-height="30"></span>
+        
+          <!-- Button trigger modal -->
+                <button type="" class="btn"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <span class="iconify" data-icon="carbon:user-avatar-filled-alt" data-width="30" data-height="30"></span>
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+
+                        <div class="mb-3 l3">
+                          <label for="exampleFormControlInput1" class=""> <span class="iconify" data-icon="carbon:user-avatar-filled-alt" data-width="20" data-height="20"></span></label>
+                          <input type="text"  class="form-control" id="" placeholder="Usuario" name="user">
+
+                          <label for="exampleFormControlInput1" class=""><span class="iconify" data-icon="simple-icons:keepassxc" data-width="20" data-height="20"></span></label>
+                          <input type="password"  class="form-control" id="" placeholder="Pass" name="pass">
+
+                          <label for="exampleFormControlInput1" class=""><span class="iconify" data-icon="mdi:onepassword" data-width="20" data-height="20"></span></label>
+                          <input type="password"  class="form-control" id="" placeholder="Confirmar Pass" name="passConfirm">
+                        </div>
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-outline-primary">Enviar</button>
+                        <button type="button" class="btn btn-outline-warning">Registrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                  <!-- modal con submodal -->
+                
       </div>
     </nav>
   </header>

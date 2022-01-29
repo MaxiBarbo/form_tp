@@ -19,9 +19,15 @@
 }
 .iconosLogin{
     @include flex-mov(flex,row);
-    margin-top: 2rem;
+    align-items: center;
+    
     gap:3rem;
     margin-right: 1rem;
+}
+.l3{
+    @include flex-mov(flex,column);
+    width: 50%;
+    gap:0.5rem;
 }
 #imgtp{
     margin-top: 1rem;
