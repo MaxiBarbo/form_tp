@@ -1,4 +1,4 @@
-Gestion Incidente formato estilo web para telefonos. 
+Gestion Incidente formato estilo para Web Mobile. 
 
 ![image](https://user-images.githubusercontent.com/86979361/149609781-cf816c00-0a44-45d6-bf12-769a5c169934.png)
 
